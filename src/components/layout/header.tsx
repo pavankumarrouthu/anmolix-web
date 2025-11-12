@@ -69,7 +69,7 @@ export function Header() {
             </SheetTrigger>
             <SheetContent side="right" className="w-full max-w-xs bg-background">
               <div className="flex h-full flex-col">
-                <div className="flex items-center justify-between border-b pb-4">
+                <div className="flex items-center justify-between border-b border-border/20 pb-4">
                   <Logo />
                    <SheetTrigger asChild>
                     <Button variant="ghost" size="icon">

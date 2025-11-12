@@ -5,32 +5,32 @@ const audiences = [
   {
     icon: GraduationCap,
     title: "Students",
-    description: "Plan your studies, track goals, and learn with clarity.",
+    description: "Organize studies, manage projects, and track progress with AI assistance.",
   },
   {
     icon: User,
     title: "Individuals",
-    description: "Build consistency, focus smarter, and track growth.",
+    description: "Plan goals, stay consistent, and understand your productivity patterns.",
   },
   {
     icon: Briefcase,
     title: "Founders",
-    description: "Lead with data-driven insights and alignment.",
+    description: "Lead teams, measure performance, and make data-driven decisions.",
   },
   {
     icon: Users,
     title: "Teams",
-    description: "Collaborate seamlessly with unified tools.",
+    description: "Collaborate in real time, automate routine tasks, and stay aligned.",
   },
   {
     icon: Rocket,
     title: "Startups",
-    description: "Simplify execution and scale intelligently.",
+    description: "Accelerate execution, manage workflows, and optimize team output.",
   },
   {
     icon: Building,
     title: "MSMEs",
-    description: "Optimize operations and improve team performance.",
+    description: "Gain intelligent visibility into operations, performance, and growth.",
   },
 ];
 
@@ -39,10 +39,10 @@ export function WhoFor() {
     <section id="who-for" className="py-16 md:py-24 bg-secondary/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <Heading as="h2">Built for Everyone Who Builds</Heading>
-          <Subheading className="mt-4">Whether you’re studying, creating, leading, or scaling — Anmolix grows with you.</Subheading>
+          <Heading as="h2">Built for Every Visionary</Heading>
+          <Subheading className="mt-4">From learners to leaders — Anmolix adapts to how you work.</Subheading>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {audiences.map((audience, index) => {
              const Icon = audience.icon;
             return(
@@ -57,6 +57,7 @@ export function WhoFor() {
             </div>
           )})}
         </div>
+        <p className="text-center mt-12 text-muted-foreground">Whatever your goal — Anmolix grows with you.</p>
       </div>
     </section>
   );

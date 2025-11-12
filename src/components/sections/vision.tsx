@@ -5,24 +5,24 @@ export function Vision() {
     <section id="vision" className="py-16 md:py-24 bg-secondary/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 max-w-4xl mx-auto">
-          <Heading as="h2" className="text-foreground mb-4">Our North Star</Heading>
+          <Heading as="h2" className="text-foreground mb-4">Shaping the Future of Intelligent Work</Heading>
         </div>
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           <div className="bg-background/50 p-8 rounded-2xl text-center">
             <h3 className="text-2xl font-headline font-bold mb-3 text-primary">Vision</h3>
             <Subheading className="text-muted-foreground">
-             To build the world’s most adaptive productivity ecosystem — where intelligence amplifies human potential.
+             To create a world where work becomes effortless — powered by intelligence, guided by purpose.
             </Subheading>
           </div>
           <div className="bg-background/50 p-8 rounded-2xl text-center">
             <h3 className="text-2xl font-headline font-bold mb-3 text-primary">Mission</h3>
             <Subheading className="text-muted-foreground">
-             To make work simple, efficient, and inspiring through AI-driven collaboration, intelligent automation, and meaningful analytics.
+             To empower individuals and organizations to achieve their highest potential through intelligent automation, seamless collaboration, and data-driven clarity.
             </Subheading>
           </div>
         </div>
         <div className="text-center mt-12">
-            <p className="text-lg italic text-muted-foreground">“We don’t just build software — we build intelligence that understands how you work.”</p>
+            <p className="text-lg italic text-muted-foreground">“We’re not building another tool. We’re building the future of how people work.”</p>
         </div>
       </div>
     </section>
