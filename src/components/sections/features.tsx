@@ -1,6 +1,7 @@
 import { Heading, Subheading } from "@/components/ui/heading";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Bot, Users, BarChart3, Atom } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 
 const featureCategories = [
   {
@@ -11,6 +12,7 @@ const featureCategories = [
       "Workflow insights",
       "Focus analysis",
     ],
+    isFuture: false,
   },
   {
     icon: Users,
@@ -20,6 +22,7 @@ const featureCategories = [
       "Team channels and discussions",
       "Unified workspace",
     ],
+    isFuture: false,
   },
   {
     icon: BarChart3,
@@ -29,6 +32,7 @@ const featureCategories = [
       "Goal & performance tracking",
       "Predictive insights",
     ],
+    isFuture: false,
   },
   {
     icon: Atom,
@@ -49,53 +53,39 @@ export function Features() {
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {featureCategories.filter(c => !c.isFuture).map((category, index) => {
+          {featureCategories.map((category, index) => {
             const Icon = category.icon;
             return (
               <Card key={index} className="bg-secondary/30 shadow-lg hover:shadow-primary/20 hover:-translate-y-1 transition-all duration-300 flex flex-col border-0">
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-3 font-headline">
-                    <div className="p-2 bg-primary/10 rounded-md">
-                      <Icon className="h-6 w-6 text-primary" />
+                  <CardTitle className="flex items-center justify-between gap-3 font-headline">
+                    <div className="flex items-center gap-3">
+                      <div className="p-2 bg-primary/10 rounded-md">
+                        <Icon className="h-6 w-6 text-primary" />
+                      </div>
+                      <span>{category.title}</span>
                     </div>
-                    <span>{category.title}</span>
+                     {category.isFuture && <Badge variant="outline" className="border-green-500 text-green-500">Future</Badge>}
                   </CardTitle>
+                   {category.isFuture && (
+                    <CardDescription className="pt-2 text-sm">{category.description}</CardDescription>
+                  )}
                 </CardHeader>
-                <CardContent className="flex-grow">
-                  <ul className="space-y-3">
-                    {category.points.map((point, i) => (
-                      <li key={i} className="flex items-start">
-                        <span className="text-primary mr-2">✓</span>
-                        <span className="text-sm text-muted-foreground">{point}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
+                {!category.isFuture && (
+                  <CardContent className="flex-grow">
+                    <ul className="space-y-3">
+                      {category.points.map((point, i) => (
+                        <li key={i} className="flex items-start">
+                          <span className="text-primary mr-2">✓</span>
+                          <span className="text-sm text-muted-foreground">{point}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                )}
               </Card>
             );
           })}
-        </div>
-
-        <div className="mt-12 text-center">
-            <Heading as="h3" className="text-2xl">Coming Soon</Heading>
-            <div className="grid lg:grid-cols-3 gap-8 mt-6 max-w-md mx-auto">
-             {featureCategories.filter(c => c.isFuture).map((category, index) => {
-                const Icon = category.icon;
-                return (
-                  <Card key={index} className="bg-secondary/30 shadow-md flex flex-col border-0">
-                    <CardHeader>
-                      <CardTitle className="flex items-center gap-3 font-headline text-xl">
-                        <div className="p-2 bg-primary/10 rounded-md">
-                            <Icon className="h-6 w-6 text-accent" />
-                        </div>
-                        <span>{category.title}</span>
-                      </CardTitle>
-                       <CardDescription className="pt-2 text-sm">{category.description}</CardDescription>
-                    </CardHeader>
-                  </Card>
-                );
-              })}
-            </div>
         </div>
       </div>
     </section>

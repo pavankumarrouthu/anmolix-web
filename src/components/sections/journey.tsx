@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Heading, Subheading } from "@/components/ui/heading";
+import { Heading } from "@/components/ui/heading";
 
 export function Journey() {
   return (
@@ -8,13 +8,13 @@ export function Journey() {
         <div className="text-center mb-12">
             <Heading as="h2">We’re building the future of productivity — one intelligent step at a time.</Heading>
         </div>
-        <div className="max-w-3xl mx-auto relative">
-          <div className="absolute left-1/2 -translate-x-1/2 w-0.5 h-full bg-border" />
-          <div className="space-y-12">
-            <div className="relative flex items-center">
-              <div className="absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-primary" />
-              <div className="w-1/2 pr-8 text-right">
-                <Card className="shadow-lg inline-block bg-secondary/50 border-0">
+        <div className="max-w-4xl mx-auto relative">
+          <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 h-1 bg-border/40" />
+          <div className="relative grid grid-cols-2 gap-8">
+            
+            <div className="flex flex-col items-center gap-4 text-center">
+                <div className="w-6 h-6 rounded-full bg-primary ring-4 ring-background z-10" />
+                <Card className="shadow-lg bg-secondary/50 border-0 w-full">
                   <CardHeader>
                     <CardTitle className="font-headline">Pilot Testing</CardTitle>
                   </CardHeader>
@@ -22,13 +22,11 @@ export function Journey() {
                     <p className="text-muted-foreground">Getting Ready</p>
                   </CardContent>
                 </Card>
-              </div>
             </div>
-            <div className="relative flex items-center">
-               <div className="absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-muted" />
-               <div className="w-1/2" />
-               <div className="w-1/2 pl-8 text-left">
-                <Card className="shadow-lg inline-block bg-secondary/50 border-0">
+            
+            <div className="flex flex-col items-center gap-4 text-center">
+               <div className="w-6 h-6 rounded-full bg-muted ring-4 ring-background z-10" />
+               <Card className="shadow-lg bg-secondary/50 border-0 w-full">
                     <CardHeader>
                       <CardTitle className="font-headline">Beta Launch</CardTitle>
                     </CardHeader>
@@ -36,20 +34,6 @@ export function Journey() {
                        <p className="text-muted-foreground">Coming Soon</p>
                     </CardContent>
                   </Card>
-               </div>
-            </div>
-             <div className="relative flex items-center">
-              <div className="absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-muted" />
-              <div className="w-1/2 pr-8 text-right">
-                <Card className="shadow-lg inline-block bg-secondary/50 border-0">
-                  <CardHeader>
-                    <CardTitle className="font-headline">Full Release</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground">2025</p>
-                  </CardContent>
-                </Card>
-              </div>
             </div>
           </div>
         </div>
