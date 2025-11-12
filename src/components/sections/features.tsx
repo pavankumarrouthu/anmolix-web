@@ -1,11 +1,11 @@
 import { Heading, Subheading } from "@/components/ui/heading";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { BrainCircuit, Users, BarChart3, Atom, CheckCircle } from "lucide-react";
+import { Users, BarChart3, Atom, CheckCircle, BrainCog } from "lucide-react";
 import { DynamicFeatures } from "./dynamic-features";
 
 const featureCategories = [
   {
-    icon: BrainCircuit,
+    icon: BrainCog,
     title: "Productivity Intelligence",
     points: [
       "Smart task automation",
@@ -64,7 +64,7 @@ export function Features() {
               <Card key={index} className="shadow-md hover:shadow-lg transition-shadow duration-300">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-3 font-headline">
-                    <Icon className="h-7 w-7 text-accent" />
+                    <Icon className="h-7 w-7 text-primary" />
                     <span>{category.title}</span>
                   </CardTitle>
                 </CardHeader>

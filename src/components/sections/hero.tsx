@@ -10,8 +10,8 @@ export function Hero() {
         aria-hidden="true"
         className="absolute inset-0 top-0 -z-10 h-full w-full bg-background"
       >
-        <div className="absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(191,0,255,0.2),rgba(255,255,255,0))]"></div>
-        <div className="absolute bottom-auto right-auto left-0 top-0 h-[500px] w-[500px] translate-x-[30%] -translate-y-[20%] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(75,0,130,0.1),rgba(255,255,255,0))]"></div>
+        <div className="absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[radial-gradient(circle_farthest-side,hsl(var(--primary)/0.1),rgba(255,255,255,0))]"></div>
+        <div className="absolute bottom-auto right-auto left-0 top-0 h-[500px] w-[500px] translate-x-[30%] -translate-y-[20%] rounded-full bg-[radial-gradient(circle_farthest-side,hsl(var(--accent)/0.05),rgba(255,255,255,0))]"></div>
       </div>
       <div className="container mx-auto px-4 text-center">
         <Heading as="h1" className="mb-6">
