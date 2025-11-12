@@ -17,8 +17,11 @@ export function Hero() {
         <Heading as="h1" className="mb-6">
           Empower Your Work. Intelligently.
         </Heading>
-        <p className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground mb-10">
-          Anmolix is an AI-powered productivity and collaboration platform designed to simplify how students, founders, and teams work, communicate, and grow.
+        <p className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground mb-4">
+          Anmolix is an AI-powered productivity and collaboration ecosystem built to simplify how individuals, teams, and startups plan, perform, and grow.
+        </p>
+        <p className="max-w-3xl mx-auto text-base text-muted-foreground mb-10">
+          From students to enterprises — we make work smarter, faster, and deeply human.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Button size="lg" asChild>
@@ -28,7 +31,7 @@ export function Hero() {
           </Button>
           <Button size="lg" variant="outline" asChild>
             <Link href="#vision">
-              Discover Vision <ArrowRight className="ml-2 h-4 w-4" />
+              Explore Our Vision <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </Button>
         </div>

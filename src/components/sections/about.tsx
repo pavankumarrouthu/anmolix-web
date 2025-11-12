@@ -1,4 +1,5 @@
 import { Heading, Subheading } from "@/components/ui/heading";
+import { Rocket, BrainCircuit, Globe } from "lucide-react";
 
 export function About() {
   return (
@@ -7,21 +8,24 @@ export function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="text-center md:text-left">
             <Heading as="h2" className="mb-4">
-              Intelligence in Every Action
+              Where Productivity Meets Intelligence
             </Heading>
             <Subheading className="mb-6">
-              Anmolix is building a unified ecosystem that blends productivity, collaboration, and intelligence. From individuals to enterprises, our mission is to help every user work smarter — powered by AI insights, automation, and seamless communication.
+              At Anmolix, we’re building a unified workspace powered by AI — designed to help people focus, collaborate, and perform with purpose. We believe productivity shouldn’t feel mechanical. Instead, it should feel intelligent, adaptive, and effortless.
             </Subheading>
           </div>
           <div className="flex flex-col gap-4">
               <div className="p-4 bg-secondary/50 rounded-lg flex items-center gap-3">
-                <p className="font-semibold">Currently in Pilot Testing</p>
+                <Rocket className="h-5 w-5 text-primary" />
+                <p className="font-semibold">Pilot testing in progress</p>
               </div>
               <div className="p-4 bg-secondary/50 rounded-lg flex items-center gap-3">
-                <p className="font-semibold">AI + Productivity + Collaboration Unified</p>
+                <BrainCircuit className="h-5 w-5 text-primary" />
+                <p className="font-semibold">AI + Productivity + Collaboration unified</p>
               </div>
               <div className="p-4 bg-secondary/50 rounded-lg flex items-center gap-3">
-                <p className="font-semibold">Designed for Individuals to Enterprises</p>
+                <Globe className="h-5 w-5 text-primary" />
+                <p className="font-semibold">Designed for individuals, teams & enterprises</p>
               </div>
           </div>
         </div>
