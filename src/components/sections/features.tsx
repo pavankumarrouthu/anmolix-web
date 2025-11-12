@@ -1,7 +1,6 @@
 import { Heading, Subheading } from "@/components/ui/heading";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Users, BarChart3, Atom, CheckCircle, BrainCog } from "lucide-react";
-import { DynamicFeatures } from "./dynamic-features";
 
 const featureCategories = [
   {
@@ -57,7 +56,7 @@ export function Features() {
           </Subheading>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 gap-8">
           {featureCategories.map((category, index) => {
             const Icon = category.icon;
             return (
@@ -82,11 +81,6 @@ export function Features() {
             );
           })}
         </div>
-        
-        <div className="max-w-3xl mx-auto">
-            <DynamicFeatures />
-        </div>
-
       </div>
     </section>
   );
