@@ -4,13 +4,13 @@ import Link from 'next/link';
 
 export function Footer() {
   return (
-    <footer className="bg-background border-t border-border/50">
+    <footer className="bg-secondary/50 border-t border-border/50">
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex flex-col items-center md:items-start gap-2">
             <Logo />
             <p className="text-sm text-muted-foreground">
-              Empowering Productivity. Redefining Intelligence.
+              Empowering productivity. Redefining intelligence.
             </p>
           </div>
           <div className="flex flex-col items-center gap-4">
@@ -27,8 +27,8 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-6 border-t border-border/50 text-center text-sm text-muted-foreground">
-            <p>© {new Date().getFullYear() + 1} Anmolix Technologies — All Rights Reserved.</p>
-            <p className="mt-1">📍 Amaravati, Andhra Pradesh | ✉️ pavanrouthu.ai@gmail.com</p>
+            <p>© 2025 Anmolix Technologies — All Rights Reserved.</p>
+            <p className="mt-1">📍 Amaravati, Andhra Pradesh | ✉️ contact@anmolix.com</p>
         </div>
       </div>
     </footer>

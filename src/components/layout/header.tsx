@@ -89,13 +89,6 @@ export function Header() {
                       {link.label}
                     </Link>
                   ))}
-                   <Link
-                      href="#contact"
-                      onClick={handleLinkClick}
-                      className="text-lg font-medium text-foreground transition-colors hover:text-primary"
-                    >
-                      Contact
-                    </Link>
                 </nav>
                 <div className="mt-auto">
                   <Button asChild className="w-full">
