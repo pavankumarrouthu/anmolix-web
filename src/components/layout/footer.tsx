@@ -23,7 +23,7 @@ export function Footer() {
                     contact@anmolix.com
                 </a>
                  <span className="text-muted-foreground">|</span>
-                <span className="text-sm text-muted-foreground">Hyderabad, India</span>
+                <span className="text-sm text-muted-foreground">Amaravati, Andhra Pradesh</span>
              </div>
             <div className="flex items-center gap-4">
               <Button variant="ghost" size="icon" asChild>
