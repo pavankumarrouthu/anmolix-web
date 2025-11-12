@@ -8,6 +8,7 @@ import { WhyAnmolix } from "@/components/sections/why-anmolix";
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
 import { WhoFor } from "@/components/sections/who-for";
+import { FounderNote } from "@/components/sections/founder-note";
 
 export default function Home() {
   return (
@@ -16,11 +17,12 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <About />
-        <Vision />
         <WhoFor />
         <Features />
+        <Vision />
         <WhyAnmolix />
         <Journey />
+        <FounderNote />
         <Cta />
       </main>
       <Footer />

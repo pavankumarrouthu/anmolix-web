@@ -6,7 +6,7 @@ export function Journey() {
     <section id="journey" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-            <Heading as="h2">Roadmap / Current Phase</Heading>
+            <Heading as="h2">Evolving Through Intelligence. Step by Step.</Heading>
         </div>
         <div className="max-w-3xl mx-auto relative">
           <div className="absolute left-1/2 -translate-x-1/2 w-0.5 h-full bg-border" />
@@ -14,34 +14,47 @@ export function Journey() {
             <div className="relative flex items-center">
               <div className="absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-primary" />
               <div className="w-1/2 pr-8 text-right">
-                <Card className="shadow-lg inline-block">
+                <Card className="shadow-lg inline-block bg-secondary/50">
                   <CardHeader>
-                    <CardTitle className="font-headline">Pilot testing: Getting Ready</CardTitle>
+                    <CardTitle className="font-headline">Pilot Testing</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground">with select users & teams</p>
+                    <p className="text-muted-foreground">Real users, real feedback</p>
                   </CardContent>
                 </Card>
               </div>
             </div>
             <div className="relative flex items-center">
-               <div className="absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-secondary" />
+               <div className="absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-muted" />
                <div className="w-1/2" />
                <div className="w-1/2 pl-8 text-left">
-                <Card className="shadow-lg inline-block">
+                <Card className="shadow-lg inline-block bg-secondary/50">
                     <CardHeader>
-                      <CardTitle className="font-headline">Beta Launch: Coming Soon</CardTitle>
+                      <CardTitle className="font-headline">Beta Launch (Coming Soon)</CardTitle>
                     </CardHeader>
                     <CardContent>
-                       <p className="text-muted-foreground">Full Release: 2025</p>
+                       <p className="text-muted-foreground">Early access program</p>
                     </CardContent>
                   </Card>
                </div>
             </div>
+             <div className="relative flex items-center">
+              <div className="absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-muted" />
+              <div className="w-1/2 pr-8 text-right">
+                <Card className="shadow-lg inline-block bg-secondary/50">
+                  <CardHeader>
+                    <CardTitle className="font-headline">Global Release (2025)</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground">Full platform availability</p>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
           </div>
         </div>
         <Subheading className="text-center mt-12 max-w-3xl mx-auto">
-            We’re building the future of productivity — one intelligent step at a time.
+            We’re continuously testing, learning, and improving to make Anmolix the world’s most adaptive workspace.
         </Subheading>
       </div>
     </section>

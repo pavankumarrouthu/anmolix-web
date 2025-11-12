@@ -12,8 +12,8 @@ import { Logo } from './logo';
 const navLinks = [
   { href: '#about', label: 'About' },
   { href: '#vision', label: 'Vision' },
-  { href: '#features', label: 'Features' },
-  { href: '#why-anmolix', label: 'Why Anmolix?' },
+  { href: '#features', label: 'Product' },
+  { href: '#contact', label: 'Contact' },
 ];
 
 export function Header() {

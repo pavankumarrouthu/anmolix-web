@@ -1,42 +1,48 @@
-import { Heading } from "@/components/ui/heading";
-import { Users, Rocket, Building, Briefcase, User } from "lucide-react";
+import { Heading, Subheading } from "@/components/ui/heading";
+import { Users, Rocket, Building, Briefcase, User, GraduationCap } from "lucide-react";
 
 const audiences = [
   {
+    icon: GraduationCap,
+    title: "Students",
+    description: "Plan your studies, track goals, and learn with clarity.",
+  },
+  {
     icon: User,
     title: "Individuals",
-    description: "Track productivity and improve daily focus.",
+    description: "Build consistency, focus smarter, and track growth.",
   },
   {
     icon: Briefcase,
     title: "Founders",
-    description: "Lead teams and make data-backed decisions.",
+    description: "Lead with data-driven insights and alignment.",
   },
   {
     icon: Users,
     title: "Teams",
-    description: "Collaborate with clarity and purpose.",
+    description: "Collaborate seamlessly with unified tools.",
   },
   {
     icon: Rocket,
     title: "Startups",
-    description: "Streamline workflows, scale execution.",
+    description: "Simplify execution and scale intelligently.",
   },
   {
     icon: Building,
     title: "MSMEs",
-    description: "Optimize operations with AI-powered analytics.",
+    description: "Optimize operations and improve team performance.",
   },
 ];
 
 export function WhoFor() {
   return (
-    <section id="who-for" className="py-16 md:py-24 bg-muted/50">
+    <section id="who-for" className="py-16 md:py-24 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <Heading as="h2">Made for Every Creator and Builder</Heading>
+          <Heading as="h2">Built for Everyone Who Builds</Heading>
+          <Subheading className="mt-4">Whether you’re studying, creating, leading, or scaling — Anmolix grows with you.</Subheading>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
           {audiences.map((audience, index) => {
              const Icon = audience.icon;
             return(
