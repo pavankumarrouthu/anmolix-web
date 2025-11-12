@@ -1,4 +1,4 @@
-import { Linkedin, Mail } from 'lucide-react';
+import { Linkedin, Mail, Twitter } from 'lucide-react';
 import { Logo } from './logo';
 import { Button } from '@/components/ui/button';
 
@@ -13,7 +13,7 @@ export function Footer() {
               Empowering productivity. Redefining intelligence.
             </p>
              <p className="text-sm text-muted-foreground">
-              Anmolix Technologies © {new Date().getFullYear()}
+              Anmolix Technologies © {new Date().getFullYear() + 1}
             </p>
           </div>
           <div className="flex flex-col items-center md:items-end gap-2">
@@ -29,6 +29,11 @@ export function Footer() {
               <Button variant="ghost" size="icon" asChild>
                 <a href="https://lnkd.in/gi8grYSG" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <Linkedin className="h-5 w-5" />
+                </a>
+              </Button>
+               <Button variant="ghost" size="icon" asChild>
+                <a href="mailto:contact@anmolix.com" aria-label="Email">
+                  <Mail className="h-5 w-5" />
                 </a>
               </Button>
             </div>

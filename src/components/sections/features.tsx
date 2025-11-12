@@ -1,38 +1,44 @@
 import { Heading, Subheading } from "@/components/ui/heading";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Bot, Users, BarChart3 } from "lucide-react";
+import { Bot, Users, BarChart3, Atom } from "lucide-react";
 
 const featureCategories = [
   {
     icon: Bot,
     title: "Productivity Intelligence",
-    description: "AI that prioritizes, tracks, and learns from how you work.",
     points: [
       "Smart task automation",
-      "Workflow optimization",
-      "Time insights and focus scores",
+      "Workflow insights",
+      "Focus analysis",
     ],
   },
   {
     icon: Users,
-    title: "Collaboration Engine",
-    description: "Communication and teamwork reimagined.",
+    title: "Collaboration Hub",
     points: [
-      "Real-time collaboration",
-      "Team hubs & document sharing",
-      "Integrated communication channels",
+      "Chat, file sharing, and project space",
+      "Team channels and discussions",
+      "Unified workspace",
     ],
   },
   {
     icon: BarChart3,
     title: "Performance Analytics",
-    description: "See what matters. Act faster.",
     points: [
-      "Intelligent dashboards",
-      "Predictive analytics",
-      "Productivity & engagement trends",
+      "AI-driven dashboards",
+      "Goal & performance tracking",
+      "Predictive insights",
     ],
   },
+  {
+    icon: Atom,
+    title: "Quantum Intelligence Layer",
+    points: [
+        "Quantum-inspired optimization",
+        "Deep organizational analysis",
+    ],
+    isFuture: true,
+  }
 ];
 
 export function Features() {
@@ -40,10 +46,10 @@ export function Features() {
     <section id="features" className="py-16 md:py-24 bg-muted/50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <Heading as="h2">One Platform. Infinite Possibilities.</Heading>
+          <Heading as="h2">All-in-One Intelligent Workspace</Heading>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {featureCategories.map((category, index) => {
             const Icon = category.icon;
             return (
@@ -52,8 +58,8 @@ export function Features() {
                   <CardTitle className="flex items-center gap-3 font-headline">
                     <Icon className="h-7 w-7 text-primary" />
                     <span>{category.title}</span>
+                    {category.isFuture && <span className="text-xs bg-primary/10 text-primary-foreground font-mono px-2 py-1 rounded-full">Future</span>}
                   </CardTitle>
-                   <Subheading className="!text-sm">{category.description}</Subheading>
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <ul className="space-y-3">
@@ -69,7 +75,7 @@ export function Features() {
             );
           })}
         </div>
-        <Subheading className="text-center mt-12">Anmolix combines data, design, and intelligence to make work simpler, smarter, and deeply human.</Subheading>
+        <Subheading className="text-center mt-12">Everything you need to plan, collaborate, and perform — intelligently.</Subheading>
       </div>
     </section>
   );

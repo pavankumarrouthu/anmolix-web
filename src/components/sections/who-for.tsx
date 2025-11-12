@@ -1,36 +1,36 @@
-import { Heading, Subheading } from "@/components/ui/heading";
+import { Heading } from "@/components/ui/heading";
 import { GraduationCap, Users, Rocket, Building, Briefcase, User } from "lucide-react";
 
 const audiences = [
   {
     icon: GraduationCap,
     title: "Students",
-    description: "Manage studies, projects, and goals intelligently.",
+    description: "Plan projects, tasks, and goals smarter.",
   },
   {
     icon: User,
     title: "Individuals",
-    description: "Stay productive, plan smartly, and build better habits.",
+    description: "Track productivity and improve daily focus.",
   },
   {
     icon: Briefcase,
     title: "Founders",
-    description: "Track progress, lead teams, and make data-backed decisions.",
+    description: "Lead teams and make data-backed decisions.",
   },
   {
     icon: Users,
     title: "Teams",
-    description: "Collaborate seamlessly with unified communication & goals.",
+    description: "Collaborate with clarity and purpose.",
   },
   {
     icon: Rocket,
     title: "Startups",
-    description: "Accelerate execution with automation and intelligent workflows.",
+    description: "Streamline workflows, scale execution.",
   },
   {
     icon: Building,
     title: "MSMEs",
-    description: "Optimize operations, analyze performance, and grow efficiently.",
+    description: "Optimize operations with AI-powered analytics.",
   },
 ];
 
@@ -39,7 +39,7 @@ export function WhoFor() {
     <section id="who-for" className="py-16 md:py-24 bg-muted/50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <Heading as="h2">Built for Everyone Who Builds</Heading>
+          <Heading as="h2">Made for Every Creator and Builder</Heading>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
           {audiences.map((audience, index) => {

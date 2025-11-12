@@ -4,25 +4,23 @@ import { Rocket, ShieldCheck, Scale, BrainCircuit, Users } from "lucide-react";
 const benefits = [
   {
     icon: Users,
-    title: "Unified AI + Productivity Platform",
-  },
-  {
-    icon: Scale,
-    title: "Built for Every Scale",
-    description: "From Student Projects to Enterprise Teams",
+    title: "Unified Productivity & Collaboration Platform",
   },
   {
     icon: BrainCircuit,
-    title: "Intuitive Design, Powerful Intelligence",
+    title: "Powered by AI Insights",
   },
   {
     icon: ShieldCheck,
-    title: "Secure, Scalable, and Data-Driven",
+    title: "Secure & Scalable for All",
+  },
+  {
+    icon: Scale,
+    title: "Intuitive Design for Modern Teams",
   },
   {
     icon: Rocket,
-    title: "Future-Ready",
-    description: "Quantum & Generative AI Integration"
+    title: "Future-Ready — Quantum & Generative AI",
   },
 ];
 
@@ -31,7 +29,7 @@ export function WhyAnmolix() {
     <section id="why-anmolix" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <Heading as="h2">The Anmolix Edge – Why Choose Us?</Heading>
+          <Heading as="h2">The Anmolix Edge – Built Different</Heading>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 max-w-6xl mx-auto">
           {benefits.map((benefit, index) => {

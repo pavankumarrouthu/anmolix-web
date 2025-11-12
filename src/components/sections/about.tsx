@@ -7,21 +7,21 @@ export function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="text-center md:text-left">
             <Heading as="h2" className="mb-4">
-              Where Work Meets Intelligence
+              Intelligence in Every Action
             </Heading>
             <Subheading className="mb-6">
-              Anmolix is building an intelligent productivity and collaboration platform that simplifies how people and teams work, plan, and perform. We bring automation, analytics, and teamwork into a unified ecosystem — so you can focus on what truly matters: <strong>growth, creativity, and results.</strong>
+              Anmolix is building a unified ecosystem that blends productivity, collaboration, and intelligence. From individuals to enterprises, our mission is to help every user work smarter — powered by AI insights, automation, and seamless communication.
             </Subheading>
           </div>
           <div className="flex flex-col gap-4">
               <div className="p-4 bg-muted/50 rounded-lg">
-                <p className="font-semibold text-primary">🔹 Pilot Testing in Progress</p>
+                <p className="font-semibold text-primary">🚀 Currently in Pilot Testing</p>
               </div>
               <div className="p-4 bg-muted/50 rounded-lg">
-                <p className="font-semibold text-primary">🔹 AI + Productivity + Collaboration Unified</p>
+                <p className="font-semibold text-primary">🧠 AI + Productivity + Collaboration Unified</p>
               </div>
               <div className="p-4 bg-muted/50 rounded-lg">
-                <p className="font-semibold text-primary">🔹 Empowering Students to Enterprises</p>
+                <p className="font-semibold text-primary">🌍 Designed for Students to Enterprises</p>
               </div>
           </div>
         </div>
