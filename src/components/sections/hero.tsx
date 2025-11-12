@@ -15,23 +15,26 @@ export function Hero() {
       </div>
       <div className="container mx-auto px-4 text-center">
         <Heading as="h1" className="mb-6">
-          Empowering the Future of Work with AI-Driven Intelligence
+          Empowering the Future of Work. Intelligently.
         </Heading>
         <p className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground mb-10">
-          Anmolix is redefining productivity and collaboration for modern teams through intelligent automation, data-driven insights, and a unified workspace designed to help organizations move faster, think smarter, and achieve more.
+          Anmolix is an AI-driven productivity and collaboration platform built for the next generation of individuals, startups, and teams — helping you achieve more with intelligence, clarity, and flow.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Button size="lg" asChild>
+            <a href="https://lnkd.in/gk7n2qfx" target="_blank" rel="noopener noreferrer">
+              Join the Waitlist
+            </a>
+          </Button>
+          <Button size="lg" variant="outline" asChild>
             <Link href="#vision">
               Explore Vision <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </Button>
-          <Button size="lg" variant="outline" asChild>
-            <a href="https://lnkd.in/gk7n2qfx" target="_blank" rel="noopener noreferrer">
-              Join the Beta
-            </a>
-          </Button>
         </div>
+         <p className="mt-6 text-sm text-muted-foreground italic">
+            Built for Students, Founders, Teams & Growing Businesses.
+        </p>
       </div>
     </section>
   );

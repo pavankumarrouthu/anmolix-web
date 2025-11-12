@@ -8,6 +8,7 @@ import { Vision } from "@/components/sections/vision";
 import { WhyAnmolix } from "@/components/sections/why-anmolix";
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
+import { WhoFor } from "@/components/sections/who-for";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Hero />
         <About />
         <Vision />
+        <WhoFor />
         <Features />
         <WhyAnmolix />
         <TechStack />
