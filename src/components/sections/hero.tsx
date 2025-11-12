@@ -27,9 +27,9 @@ export function Hero() {
             </Link>
           </Button>
           <Button size="lg" variant="outline" asChild>
-            <Link href="#contact">
+            <a href="https://lnkd.in/gk7n2qfx" target="_blank" rel="noopener noreferrer">
               Join the Beta
-            </Link>
+            </a>
           </Button>
         </div>
       </div>

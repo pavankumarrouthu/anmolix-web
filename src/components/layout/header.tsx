@@ -55,7 +55,7 @@ export function Header() {
         </nav>
         <div className="hidden md:block">
           <Button asChild>
-            <Link href="#contact">Join the Beta</Link>
+            <a href="https://lnkd.in/gk7n2qfx" target="_blank" rel="noopener noreferrer">Join the Beta</a>
           </Button>
         </div>
         <div className="md:hidden">
@@ -98,7 +98,7 @@ export function Header() {
                 </nav>
                 <div className="mt-auto">
                   <Button asChild className="w-full">
-                    <Link href="#contact" onClick={handleLinkClick}>Join the Beta</Link>
+                    <a href="https://lnkd.in/gk7n2qfx" target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>Join the Beta</a>
                   </Button>
                 </div>
               </div>

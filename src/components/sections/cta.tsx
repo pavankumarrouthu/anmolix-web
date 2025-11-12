@@ -25,9 +25,9 @@ export function Cta() {
 
         <div className="flex flex-wrap items-center justify-center gap-4">
           <Button size="lg" asChild>
-            <Link href="#contact">
+            <a href="https://lnkd.in/gk7n2qfx" target="_blank" rel="noopener noreferrer">
               <Users className="mr-2" /> Join the Waitlist
-            </Link>
+            </a>
           </Button>
           <Button size="lg" variant="outline" asChild>
             <a href="mailto:contact@anmolix.com">
@@ -35,7 +35,7 @@ export function Cta() {
             </a>
           </Button>
           <Button size="lg" variant="outline" asChild>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://lnkd.in/gi8grYSG" target="_blank" rel="noopener noreferrer">
               <Linkedin className="mr-2" /> LinkedIn
             </a>
           </Button>

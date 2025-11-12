@@ -15,7 +15,7 @@ export function Footer() {
           </div>
           <div className="flex items-center gap-4">
             <Button variant="ghost" size="icon" asChild>
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <a href="https://lnkd.in/gi8grYSG" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <Linkedin className="h-5 w-5" />
               </a>
             </Button>
