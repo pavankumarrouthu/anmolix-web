@@ -16,7 +16,7 @@ export function Journey() {
               <div className="w-1/2 pr-8 text-right">
                 <Card className="shadow-lg inline-block">
                   <CardHeader>
-                    <CardTitle className="font-headline">Pilot Testing: Ongoing</CardTitle>
+                    <CardTitle className="font-headline">Pilot testing: Getting Ready</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground">with select users & teams</p>

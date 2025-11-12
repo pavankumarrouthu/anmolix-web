@@ -19,7 +19,7 @@ export function Cta() {
             </a>
           </Button>
           <Button size="lg" variant="outline" asChild>
-            <a href="mailto:contact@anmolix.com">
+            <a href="mailto:pavanrouthu.ai@gmail.com">
               Contact Us
             </a>
           </Button>

@@ -20,7 +20,7 @@ export function Footer() {
              <div className="flex items-center gap-2">
                 <a href="mailto:contact@anmolix.com" className="text-sm text-muted-foreground hover:text-foreground flex items-center gap-1">
                     <Mail className="h-4 w-4" />
-                    contact@anmolix.com
+                    pavanrouthu.ai@gmail.com
                 </a>
                  <span className="text-muted-foreground">|</span>
                 <span className="text-sm text-muted-foreground">Amaravati, Andhra Pradesh</span>
