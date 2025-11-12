@@ -1,10 +1,10 @@
 import { Heading, Subheading } from "@/components/ui/heading";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Users, BarChart3, Atom, CheckCircle, BrainCog } from "lucide-react";
+import { Users, BarChart3, Atom, CheckCircle } from "lucide-react";
 
 const featureCategories = [
   {
-    icon: BrainCog,
+    icon: Users,
     title: "Productivity Intelligence",
     points: [
       "Smart task automation",
