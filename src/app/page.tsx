@@ -3,7 +3,6 @@ import { Cta } from "@/components/sections/cta";
 import { Features } from "@/components/sections/features";
 import { Hero } from "@/components/sections/hero";
 import { Journey } from "@/components/sections/journey";
-import { TechStack } from "@/components/sections/tech-stack";
 import { Vision } from "@/components/sections/vision";
 import { WhyAnmolix } from "@/components/sections/why-anmolix";
 import { Footer } from "@/components/layout/footer";
@@ -21,7 +20,6 @@ export default function Home() {
         <WhoFor />
         <Features />
         <WhyAnmolix />
-        <TechStack />
         <Journey />
         <Cta />
       </main>
