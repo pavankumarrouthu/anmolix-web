@@ -15,13 +15,13 @@ export function About() {
           </div>
           <div className="flex flex-col gap-4">
               <div className="p-4 bg-muted/50 rounded-lg">
-                <p className="font-semibold text-primary">🚀 Currently in Pilot Testing</p>
+                <p className="font-semibold text-primary">Currently in Pilot Testing</p>
               </div>
               <div className="p-4 bg-muted/50 rounded-lg">
-                <p className="font-semibold text-primary">🧠 AI + Productivity + Collaboration Unified</p>
+                <p className="font-semibold text-primary">AI + Productivity + Collaboration Unified</p>
               </div>
               <div className="p-4 bg-muted/50 rounded-lg">
-                <p className="font-semibold text-primary">🌍 Designed for Students to Enterprises</p>
+                <p className="font-semibold text-primary">Designed for Students to Enterprises</p>
               </div>
           </div>
         </div>

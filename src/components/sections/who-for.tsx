@@ -1,12 +1,7 @@
 import { Heading } from "@/components/ui/heading";
-import { GraduationCap, Users, Rocket, Building, Briefcase, User } from "lucide-react";
+import { Users, Rocket, Building, Briefcase, User } from "lucide-react";
 
 const audiences = [
-  {
-    icon: GraduationCap,
-    title: "Students",
-    description: "Plan projects, tasks, and goals smarter.",
-  },
   {
     icon: User,
     title: "Individuals",
@@ -41,7 +36,7 @@ export function WhoFor() {
         <div className="text-center mb-12">
           <Heading as="h2">Made for Every Creator and Builder</Heading>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           {audiences.map((audience, index) => {
              const Icon = audience.icon;
             return(
