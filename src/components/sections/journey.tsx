@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Heading } from "@/components/ui/heading";
+import { Heading, Subheading } from "@/components/ui/heading";
 
 const journeySteps = [
     {
@@ -12,22 +12,28 @@ const journeySteps = [
       description: "Early access program",
       status: "inactive",
     },
+    {
+      title: "Global Release (2025)",
+      description: "Full platform availability",
+      status: "inactive",
+    }
 ];
 
 export function Journey() {
   return (
     <section id="journey" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
             <Heading as="h2">Evolving Through Intelligence. Step by Step.</Heading>
+            <Subheading className="mt-4 max-w-2xl mx-auto">We’re continuously testing, learning, and improving to make Anmolix the world’s most adaptive workspace.</Subheading>
         </div>
-        <div className="max-w-2xl mx-auto relative">
+        <div className="relative max-w-4xl mx-auto">
           <div className="absolute left-1/2 -translate-x-1/2 h-full w-0.5 bg-border/40" />
           <div className="relative flex flex-col gap-16">
             {journeySteps.map((step, index) => (
                <div key={index} className="flex items-center gap-8">
                  <div className={`w-1/2 ${index % 2 === 0 ? 'text-right' : 'order-last text-left'}`}>
-                     <Card className="inline-block shadow-lg bg-secondary/50 border-0 text-left">
+                     <Card className="inline-block shadow-lg bg-secondary/50 border-0 rounded-2xl text-left">
                        <CardHeader>
                          <CardTitle className="font-headline">{step.title}</CardTitle>
                        </CardHeader>
@@ -36,7 +42,9 @@ export function Journey() {
                        </CardContent>
                      </Card>
                  </div>
-                 <div className={`w-4 h-4 rounded-full ${step.status === 'active' ? 'bg-primary' : 'bg-muted'} ring-8 ring-background z-10`}></div>
+                 <div className={`flex items-center justify-center w-10 h-10 rounded-full ${step.status === 'active' ? 'bg-primary animate-pulse' : 'bg-muted'} ring-8 ring-background z-10`}>
+                  <span className="text-primary-foreground">{step.status === 'active' ? '✓' : index + 1}</span>
+                 </div>
                  <div className="w-1/2"></div>
                </div>
             ))}

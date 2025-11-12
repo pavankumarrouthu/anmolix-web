@@ -5,21 +5,24 @@ export function Vision() {
     <section id="vision" className="py-16 md:py-24 bg-secondary/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 max-w-4xl mx-auto">
-          <Heading as="h2" className="text-foreground mb-4">Shaping the Future of Intelligent Work</Heading>
+          <Heading as="h2" className="text-foreground mb-4">Our North Star</Heading>
         </div>
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          <div className="bg-background/50 p-8 rounded-lg text-center">
-            <h3 className="text-2xl font-headline font-bold mb-3">Vision</h3>
+          <div className="bg-background/50 p-8 rounded-2xl text-center">
+            <h3 className="text-2xl font-headline font-bold mb-3 text-primary">Vision</h3>
             <Subheading className="text-muted-foreground">
-             To redefine productivity through intelligence — creating a world where technology empowers human potential at every level.
+             To build the world’s most adaptive productivity ecosystem — where intelligence amplifies human potential.
             </Subheading>
           </div>
-          <div className="bg-background/50 p-8 rounded-lg text-center">
-            <h3 className="text-2xl font-headline font-bold mb-3">Mission</h3>
+          <div className="bg-background/50 p-8 rounded-2xl text-center">
+            <h3 className="text-2xl font-headline font-bold mb-3 text-primary">Mission</h3>
             <Subheading className="text-muted-foreground">
-             To simplify, optimize, and elevate the way teams and individuals work through intelligent automation, collaboration, and real-time insights.
+             To make work simple, efficient, and inspiring through AI-driven collaboration, intelligent automation, and meaningful analytics.
             </Subheading>
           </div>
+        </div>
+        <div className="text-center mt-12">
+            <p className="text-lg italic text-muted-foreground">“We don’t just build software — we build intelligence that understands how you work.”</p>
         </div>
       </div>
     </section>

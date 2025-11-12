@@ -11,8 +11,8 @@ import { Logo } from './logo';
 
 const navLinks = [
   { href: '#about', label: 'About' },
+  { href: '#product', label: 'Product' },
   { href: '#vision', label: 'Vision' },
-  { href: '#features', label: 'Product' },
   { href: '#contact', label: 'Contact' },
 ];
 
@@ -56,7 +56,7 @@ export function Header() {
         </nav>
         <div className="hidden md:block">
           <Button asChild>
-            <a href="https://lnkd.in/gk7n2qfx" target="_blank" rel="noopener noreferrer">Join the Waitlist</a>
+            <Link href="#contact">Join the Waitlist</Link>
           </Button>
         </div>
         <div className="md:hidden">
@@ -92,7 +92,7 @@ export function Header() {
                 </nav>
                 <div className="mt-auto">
                   <Button asChild className="w-full">
-                    <a href="https://lnkd.in/gk7n2qfx" target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>Join Waitlist</a>
+                    <Link href="#contact" onClick={handleLinkClick}>Join Waitlist</Link>
                   </Button>
                 </div>
               </div>

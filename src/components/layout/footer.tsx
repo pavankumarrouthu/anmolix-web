@@ -17,8 +17,8 @@ export function Footer() {
               <div className="flex items-center gap-4 text-sm text-muted-foreground">
                 <Link href="#about" className="hover:text-foreground">About</Link>
                 <Link href="#vision" className="hover:text-foreground">Vision</Link>
-                <Link href="https://lnkd.in/gk7n2qfx" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">Join Waitlist</Link>
-                <Link href="#contact" className="hover:text-foreground">Contact</Link>
+                <Link href="#contact" className="hover:text-foreground">Join Waitlist</Link>
+                <Link href="mailto:contact@anmolix.com" className="hover:text-foreground">Contact</Link>
               </div>
                <div className="flex items-center gap-4">
                 <a href="https://lnkd.in/gi8grYSG" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground"><Linkedin className="h-5 w-5" /></a>
@@ -30,7 +30,7 @@ export function Footer() {
         </div>
         <div className="mt-8 pt-6 border-t border-border/20 text-center text-sm text-muted-foreground">
             <p>© 2025 Anmolix Technologies — All Rights Reserved.</p>
-            <p className="mt-1">📍 Amaravati, Andhra Pradesh | ✉️ contact@anmolix.com</p>
+            <p className="mt-1">📍 Hyderabad, India | ✉️ contact@anmolix.com</p>
         </div>
       </div>
     </footer>

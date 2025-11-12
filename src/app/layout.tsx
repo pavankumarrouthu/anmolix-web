@@ -2,6 +2,18 @@ import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
+import { Inter, Poppins } from 'next/font/google'
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+})
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['700'],
+  variable: '--font-poppins',
+})
 
 export const metadata: Metadata = {
   title: 'Anmolix – The Future of Intelligent Work',
@@ -14,13 +26,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Satoshi:wght@700&family=Poppins:wght@700&display=swap" rel="stylesheet" />
-      </head>
-      <body className={cn("font-body antialiased")}>
+    <html lang="en" className="scroll-smooth dark">
+      <body className={cn("font-body antialiased", inter.variable, poppins.variable)}>
         {children}
         <Toaster />
       </body>
