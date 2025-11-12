@@ -6,31 +6,28 @@ const featureCategories = [
   {
     icon: Bot,
     title: "Productivity Intelligence",
-    description: "Automate repetitive work. Prioritize tasks smartly. Get real-time clarity.",
     points: [
       "Smart task automation",
-      "Adaptive scheduling",
-      "Focus tracking",
+      "Workflow insights",
+      "Focus analysis",
     ],
   },
   {
     icon: Users,
-    title: "Collaboration Engine",
-    description: "Connect, communicate, and share effortlessly — all in one space.",
+    title: "Collaboration Hub",
     points: [
-      "Chat & file sharing",
-      "Unified work dashboard",
-      "Team sync spaces",
+      "Chat, file sharing, and project space",
+      "Team channels and discussions",
+      "Unified workspace",
     ],
   },
   {
     icon: BarChart3,
     title: "Performance Analytics",
-    description: "See what matters. Predict what’s next.",
     points: [
-      "Productivity & behavior insights",
-      "Role-based performance reports",
-      "Predictive AI suggestions",
+      "AI-driven dashboards",
+      "Goal & performance tracking",
+      "Predictive insights",
     ],
   },
   {
@@ -47,7 +44,7 @@ export function Features() {
     <section id="features" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <Heading as="h2">One Platform. Infinite Possibilities.</Heading>
+          <Heading as="h2">All-in-One Intelligent Workspace</Heading>
           <Subheading className="mt-4">Everything you need to plan, collaborate, and perform — intelligently.</Subheading>
         </div>
         
@@ -63,7 +60,6 @@ export function Features() {
                     </div>
                     <span>{category.title}</span>
                   </CardTitle>
-                  <CardDescription className="pt-2">{category.description}</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <ul className="space-y-3">

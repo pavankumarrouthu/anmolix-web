@@ -15,7 +15,7 @@ export function Logo({ width = 160, height = 50 }) {
                 <rect width="600" height="160" fill="transparent" />
                 <g transform="translate(10,28)">
                     <text x="0" y="100" fontFamily="Poppins, sans-serif"
-                        fontWeight="700" fontSize="120" fill="hsl(var(--foreground))">anmolix</text>
+                        fontWeight="700" fontSize="120" fill="hsl(var(--primary))">anmolix</text>
                 </g>
             </svg>
         </Link>

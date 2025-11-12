@@ -12,10 +12,10 @@ export function Cta() {
           <div className="absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[20%] translate-y-[20%] rounded-full bg-[radial-gradient(circle_farthest-side,hsl(var(--primary)/0.1),rgba(255,255,255,0))]"></div>
         </div>
         <Heading as="h2" className="mb-4">
-          Join the Future of Intelligent Work
+          Be part of the future of intelligent work.
         </Heading>
         <Subheading className="mx-auto mb-8 max-w-2xl">
-          Whether you’re a student, startup, or enterprise — Anmolix is your companion for intelligent productivity.
+          Whether you’re a student, startup, or organization — Anmolix is built to help you grow.
         </Subheading>
 
         <div className="flex flex-wrap items-center justify-center gap-4">
@@ -26,7 +26,7 @@ export function Cta() {
           </Button>
           <Button size="lg" variant="outline" asChild>
             <a href="mailto:contact@anmolix.com">
-              Collaborate with Us
+              Contact Us
             </a>
           </Button>
         </div>

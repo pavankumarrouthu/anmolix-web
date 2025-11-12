@@ -10,7 +10,7 @@ export function Footer() {
           <div className="flex flex-col items-center md:items-start gap-2">
             <Logo />
             <p className="text-sm text-muted-foreground">
-              Empowering Productivity. Redefining Intelligence.
+              Empowering productivity. Redefining intelligence.
             </p>
           </div>
           <div className="flex flex-col items-center gap-4">
