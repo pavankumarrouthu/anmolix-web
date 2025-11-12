@@ -20,7 +20,7 @@ export function Cta() {
             <Mail className="h-5 w-5" />
             contact@anmolix.com
           </a>
-          <p className="text-muted-foreground mt-1">Hyderabad, India</p>
+          <p className="text-muted-foreground mt-1">Amaravati, Andhra Pradesh</p>
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-4">
