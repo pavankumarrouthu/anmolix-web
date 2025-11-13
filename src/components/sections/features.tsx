@@ -1,11 +1,11 @@
 import { Heading, Subheading } from "@/components/ui/heading";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Bot, Users, BarChart3, Atom } from "lucide-react";
+import { BrainCircuit, Users, BarChart3, Atom } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const featureCategories = [
   {
-    icon: Bot,
+    icon: BrainCircuit,
     title: "Productivity Intelligence",
     description: "Smart task automation, AI-based prioritization, and focus insights to help you work at your best.",
   },

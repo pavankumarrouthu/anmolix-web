@@ -1,10 +1,10 @@
 import { Heading } from "@/components/ui/heading";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Bot, ShieldCheck, Zap, BarChart3, Globe } from "lucide-react";
+import { Layers, ShieldCheck, Zap, BarChart3, Scaling, Rocket } from "lucide-react";
 
 const benefits = [
   {
-    icon: Bot,
+    icon: Layers,
     title: "Unified Intelligence",
     description: "Productivity and collaboration, finally together."
   },
@@ -19,12 +19,12 @@ const benefits = [
     description: "Enterprise-grade reliability for all users."
   },
   {
-    icon: Globe,
+    icon: Scaling,
     title: "Inclusive Design",
     description: "Built for individuals to enterprises."
   },
   {
-    icon: BarChart3,
+    icon: Rocket,
     title: "Future-Ready",
     description: "Advancing with AI + Quantum innovation."
   },

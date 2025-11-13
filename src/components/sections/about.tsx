@@ -1,5 +1,5 @@
 import { Heading, Subheading } from "@/components/ui/heading";
-import { Rocket, BrainCircuit, Globe } from "lucide-react";
+import { Layers, BrainCircuit, Scaling } from "lucide-react";
 
 export function About() {
   return (
@@ -16,7 +16,7 @@ export function About() {
         </div>
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
             <div className="flex flex-col items-center gap-3 rounded-lg border border-border bg-card/50 p-6">
-              <Rocket className="h-8 w-8 text-primary" />
+              <Layers className="h-8 w-8 text-primary" />
               <h3 className="font-bold">Unified Productivity</h3>
               <p className="text-sm text-muted-foreground">Streamline your work with a single, intelligent platform.</p>
             </div>
@@ -26,7 +26,7 @@ export function About() {
               <p className="text-sm text-muted-foreground">Make better decisions with data-driven clarity.</p>
             </div>
             <div className="flex flex-col items-center gap-3 rounded-lg border border-border bg-card/50 p-6">
-              <Globe className="h-8 w-8 text-primary" />
+              <Scaling className="h-8 w-8 text-primary" />
                <h3 className="font-bold">For Every Scale</h3>
               <p className="text-sm text-muted-foreground">Built for students, startups, and enterprises.</p>
             </div>
