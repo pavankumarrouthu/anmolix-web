@@ -1,18 +1,22 @@
 import { Heading, Subheading } from "@/components/ui/heading";
-import { CheckCircle } from "lucide-react";
+import { Layers, BrainCircuit, Scaling } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const highlights = [
   {
-    icon: "🚀",
-    text: "Unified productivity and collaboration ecosystem",
+    icon: Layers,
+    title: "Unified Ecosystem",
+    text: "A single platform for productivity, collaboration, and project management.",
   },
   {
-    icon: "🧠",
-    text: "AI-powered insights for modern teams",
+    icon: BrainCircuit,
+    title: "AI-Powered Insights",
+    text: "Automate tasks and gain intelligent recommendations to work smarter.",
   },
   {
-    icon: "🌍",
-    text: "Built for students, startups, and enterprises",
+    icon: Scaling,
+    title: "Built For Growth",
+    text: "Designed to scale with you, from individual students to entire enterprises.",
   },
 ];
 
@@ -28,22 +32,32 @@ export function About() {
           <p className="text-lg text-muted-foreground">
             Anmolix is building the next-generation workspace — uniting productivity, collaboration, and analytics into one intelligent platform. We help individuals and organizations streamline work, automate repetitive tasks, and make better decisions powered by AI-driven insights.
           </p>
-          
-          <div className="mt-10 grid grid-cols-1 sm:grid-cols-1 gap-4 text-left max-w-md mx-auto">
-            {highlights.map((highlight, index) => (
-              <div key={index} className="flex items-start gap-3">
-                <span className="text-xl pt-0.5">{highlight.icon}</span>
-                <p className="text-base text-muted-foreground">
-                  {highlight.text}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          <p className="mt-12 text-lg font-semibold text-foreground/80 tracking-wide">
-            Work smarter. Collaborate faster. Grow intelligently.
-          </p>
         </div>
+
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {highlights.map((highlight, index) => {
+                const Icon = highlight.icon;
+                return (
+                    <Card key={index} className="bg-card/50 shadow-sm hover:shadow-primary/10 transition-shadow duration-300 rounded-2xl border-border">
+                        <CardHeader className="flex flex-col items-center text-center">
+                             <div className="p-3 bg-primary/10 rounded-full mb-2">
+                                <Icon className="h-6 w-6 text-primary" />
+                             </div>
+                            <CardTitle className="font-sans text-lg">{highlight.title}</CardTitle>
+                        </CardHeader>
+                        <CardContent className="text-center pt-0">
+                            <p className="text-sm text-muted-foreground">
+                                {highlight.text}
+                            </p>
+                        </CardContent>
+                    </Card>
+                )
+            })}
+        </div>
+
+        <p className="mt-12 text-center text-lg font-semibold text-foreground/80 tracking-wide">
+            Work smarter. Collaborate faster. Grow intelligently.
+        </p>
       </div>
     </section>
   );
