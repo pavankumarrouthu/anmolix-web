@@ -1,35 +1,35 @@
 import { Heading, Subheading } from "@/components/ui/heading";
-import { Layers, BrainCircuit, Scaling } from "lucide-react";
 
 export function About() {
   return (
     <section id="about" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto">
-          <Heading as="h2" className="mb-4">
-            Where Productivity Meets Intelligence
+          <Subheading className="font-semibold text-primary">The Problem & The Anmolix Promise</Subheading>
+          <Heading as="h2" className="mt-4 mb-6">
+            The World Has a Focus Problem. We’re Solving It.
           </Heading>
-          <Subheading className="mb-6">
-            Anmolix is building the next-generation workspace — uniting productivity, collaboration, and analytics into one intelligent platform. We help individuals and organizations streamline work, automate repetitive tasks, and make better decisions powered by AI-driven insights.
-          </Subheading>
-          <p className="text-primary font-semibold">Work smarter. Collaborate faster. Grow intelligently.</p>
+          <p className="text-lg text-muted-foreground">
+            Today’s generation—students, founders, professionals, and teams—all face the same hidden struggle: people are losing control of their time. Distractions are stronger, schedules are chaotic, and consistency is dying. People don’t lack talent. They lack **structure**.
+          </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
-            <div className="flex flex-col items-center gap-3 rounded-lg border border-border bg-card/50 p-6">
-              <Layers className="h-8 w-8 text-primary" />
-              <h3 className="font-bold">Unified Productivity</h3>
-              <p className="text-sm text-muted-foreground">Streamline your work with a single, intelligent platform.</p>
-            </div>
-            <div className="flex flex-col items-center gap-3 rounded-lg border border-border bg-card/50 p-6">
-              <BrainCircuit className="h-8 w-8 text-primary" />
-              <h3 className="font-bold">AI-Powered Insights</h3>
-              <p className="text-sm text-muted-foreground">Make better decisions with data-driven clarity.</p>
-            </div>
-            <div className="flex flex-col items-center gap-3 rounded-lg border border-border bg-card/50 p-6">
-              <Scaling className="h-8 w-8 text-primary" />
-               <h3 className="font-bold">For Every Scale</h3>
-              <p className="text-sm text-muted-foreground">Built for students, startups, and enterprises.</p>
-            </div>
+
+        <div className="mt-16 text-center max-w-4xl mx-auto">
+          <Heading as="h3" className="mb-4 text-2xl md:text-3xl">
+            A New Era of Structured Intelligence
+          </Heading>
+          <p className="text-muted-foreground sm:text-lg">
+            Anmolix introduces a disciplined, intelligent, and beautifully structured way of working that helps people and teams eliminate chaos, maintain daily discipline, and build powerful habits. Because productivity is not just about working hard—it’s about working **intelligently and on time.**
+          </p>
+        </div>
+        
+        <div className="mt-16 text-center max-w-2xl mx-auto">
+            <Heading as="h3" className="text-2xl md:text-3xl">On Time. Every Time.</Heading>
+            <blockquote className="mt-4">
+                <p className="text-xl italic text-muted-foreground">
+                  “Anmolix doesn’t just remind you—it guides you. It doesn’t just track tasks—it structures your day. It doesn’t just show productivity—it builds it inside you.”
+                </p>
+            </blockquote>
         </div>
       </div>
     </section>
