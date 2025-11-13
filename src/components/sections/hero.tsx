@@ -22,7 +22,7 @@ export function Hero() {
               Join the Waitlist
             </Link>
           </Button>
-          <Button size="lg" variant="outline" asChild>
+          <Button size="lg" variant="secondary" asChild>
             <Link href="#vision">
               Explore the Vision <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
