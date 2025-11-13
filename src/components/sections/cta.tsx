@@ -18,7 +18,7 @@ export function Cta() {
               Join the Waitlist
             </a>
           </Button>
-          <Button size="lg" variant="outline" className="bg-transparent" asChild>
+          <Button size="lg" variant="secondary" asChild>
             <a href="mailto:pavanrouthu.ai@gmail.com">
               Collaborate with Us
             </a>
