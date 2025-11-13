@@ -49,7 +49,7 @@ export function Features() {
                       </div>
                       <CardTitle className="font-sans text-xl">{category.title}</CardTitle>
                     </div>
-                     {category.isFuture && <Badge variant="outline" className="border-accent text-accent">Future</Badge>}
+                     {category.isFuture && <Badge variant="outline" className="border-success text-success">Future</Badge>}
                   </div>
                 </CardHeader>
                 <CardContent className="flex-grow flex flex-col">

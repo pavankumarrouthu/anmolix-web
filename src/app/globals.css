@@ -18,6 +18,7 @@
     --muted-foreground: 215.4 16.3% 46.9%;
     --accent: 210 20% 92%;
     --accent-foreground: 222.2 47.4% 11.2%;
+    --success: 140 70% 40%; /* A nice green for success states */
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
     --border: 214.3 31.8% 91.4%;
@@ -46,6 +47,7 @@
     --muted-foreground: 220 10% 65%;
     --accent: 193 100% 50%;
     --accent-foreground: 231 60% 11%;
+    --success: 140 60% 50%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
     --border: 226 53% 22%;
