@@ -2,7 +2,7 @@ import { Heading, Subheading } from "@/components/ui/heading";
 
 export function Vision() {
   return (
-    <section id="vision" className="py-16 md:py-24 bg-secondary/30">
+    <section id="vision" className="py-16 md:py-24 bg-primary/10">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 max-w-4xl mx-auto">
           <Heading as="h2" className="text-foreground mb-4">Shaping the Future of Intelligent Work</Heading>
