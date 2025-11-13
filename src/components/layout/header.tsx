@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetDescription, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
 import { Logo } from './logo';
 
@@ -68,6 +68,8 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-full max-w-xs bg-background">
+              <SheetTitle className="sr-only">Mobile Navigation Menu</SheetTitle>
+              <SheetDescription className="sr-only">Main navigation links for the Anmolix website.</SheetDescription>
               <div className="flex h-full flex-col">
                 <div className="flex items-center justify-between border-b border-border/20 pb-4">
                   <Logo />
