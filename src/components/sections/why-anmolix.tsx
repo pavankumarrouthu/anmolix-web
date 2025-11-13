@@ -1,6 +1,6 @@
-import { Heading, Subheading } from "@/components/ui/heading";
+import { Heading } from "@/components/ui/heading";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Bot, ShieldCheck, Zap, BarChart3, Users, Globe } from "lucide-react";
+import { Bot, ShieldCheck, Zap, BarChart3, Globe } from "lucide-react";
 
 const benefits = [
   {
@@ -41,7 +41,7 @@ export function WhyAnmolix() {
           {benefits.map((benefit, index) => {
             const Icon = benefit.icon;
             return (
-              <Card key={index} className="text-center p-6 bg-card rounded-2xl shadow-sm hover:shadow-primary/10 hover:scale-105 transition-all duration-300">
+              <Card key={index} className="text-center p-6 bg-card/50 border border-border rounded-2xl shadow-sm hover:shadow-primary/10 hover:scale-105 transition-all duration-300">
                  <CardHeader className="p-0 flex flex-col items-center">
                    <div className="p-3 bg-primary/10 rounded-full mb-3">
                      <Icon className="h-6 w-6 text-primary" />

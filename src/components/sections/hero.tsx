@@ -5,8 +5,10 @@ import Link from "next/link";
 
 export function Hero() {
   return (
-    <section className="relative py-24 md:py-32 lg:py-40">
-      <div className="container mx-auto px-4 text-center">
+    <section className="relative py-24 md:py-32 lg:py-40 overflow-hidden">
+       <div className="absolute top-0 left-0 -translate-x-1/3 -translate-y-1/3 w-[800px] h-[800px] rounded-full bg-primary/10 blur-[150px]" />
+       <div className="absolute bottom-0 right-0 translate-x-1/3 translate-y-1/3 w-[800px] h-[800px] rounded-full bg-accent/10 blur-[150px]" />
+      <div className="container mx-auto px-4 text-center relative">
         <p className="mb-4 font-semibold text-primary">For Students. For Founders. For Teams. For You.</p>
         <Heading as="h1" className="mb-6">
           Empower Your Work. Intelligently.

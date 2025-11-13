@@ -36,7 +36,7 @@ const audiences = [
 
 export function WhoFor() {
   return (
-    <section id="who-for" className="py-16 md:py-24 bg-secondary/30">
+    <section id="who-for" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <Heading as="h2">Built for Every Visionary</Heading>
@@ -46,7 +46,7 @@ export function WhoFor() {
           {audiences.map((audience, index) => {
              const Icon = audience.icon;
             return(
-            <div key={index} className="text-center p-6 bg-background rounded-2xl shadow-sm hover:shadow-primary/10 hover:scale-105 transition-all duration-300">
+            <div key={index} className="text-center p-6 bg-card/50 border border-border rounded-2xl shadow-sm hover:shadow-primary/10 hover:scale-105 transition-all duration-300">
               <div className="flex justify-center mb-4">
                 <div className="bg-primary/10 p-3 rounded-full">
                   <Icon className="h-8 w-8 text-primary" />

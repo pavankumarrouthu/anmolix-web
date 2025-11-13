@@ -2,11 +2,17 @@ import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
-import { Inter } from 'next/font/google'
+import { Inter, Poppins } from 'next/font/google'
 
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
+})
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '600', '700'],
+  variable: '--font-poppins',
 })
 
 export const metadata: Metadata = {
@@ -20,8 +26,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={cn("font-sans antialiased", inter.variable)}>
+    <html lang="en" className="dark scroll-smooth">
+      <body className={cn("font-sans antialiased", inter.variable, poppins.variable)}>
         {children}
         <Toaster />
       </body>
