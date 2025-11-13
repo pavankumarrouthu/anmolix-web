@@ -23,13 +23,13 @@ export function Footer() {
                 <a href="https://lnkd.in/gi8grYSG" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors"><Linkedin className="h-5 w-5" /></a>
                 <a href="#" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors"><Twitter className="h-5 w-5" /></a>
                 <a href="#" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors"><Instagram className="h-5 w-5" /></a>
-                <a href="mailto:contact@anmolix.com" className="text-muted-foreground hover:text-foreground transition-colors"><Mail className="h-5 w-5" /></a>
+                <a href="mailto:pavanrouthu.ai@gmail.com" className="text-muted-foreground hover:text-foreground transition-colors"><Mail className="h-5 w-5" /></a>
               </div>
           </div>
         </div>
         <div className="mt-8 pt-6 border-t border-border/20 text-center text-sm text-muted-foreground">
             <p>© 2025 Anmolix Technologies — All Rights Reserved.</p>
-            <p className="mt-1">📍 Hyderabad, India | ✉️ contact@anmolix.com</p>
+            <p className="mt-1">📍 Hyderabad, India | ✉️ pavanrouthu.ai@gmail.com</p>
             <p className="mt-4 text-xs italic">Made with 💙 by humans — enhanced by intelligence.</p>
         </div>
       </div>
