@@ -1,15 +1,12 @@
 import Link from 'next/link';
-import Image from 'next/image';
+import AnmolixLogo from './AnmolixLogo';
 
 export function Logo({ width = 160, height = 40 }) {
     return (
-        <Link href="/" aria-label="Anmolix Home">
-           <Image
-                src="/anmolix-logo.png"
-                alt="Anmolix Logo"
+        <Link href="/" aria-label="Anmolix Home" className="text-primary hover:text-primary/90 transition-colors">
+           <AnmolixLogo
                 width={width}
                 height={height}
-                priority
             />
         </Link>
     );
