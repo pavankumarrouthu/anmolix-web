@@ -47,7 +47,7 @@ export function Features() {
                       <div className="p-3 bg-primary/10 rounded-lg">
                         <Icon className="h-6 w-6 text-primary" />
                       </div>
-                      <CardTitle className="font-headline text-xl">{category.title}</CardTitle>
+                      <CardTitle className="font-sans text-xl">{category.title}</CardTitle>
                     </div>
                      {category.isFuture && <Badge variant="outline" className="border-green-500 text-green-500">Future</Badge>}
                   </div>

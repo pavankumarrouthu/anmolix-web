@@ -32,11 +32,11 @@ export function Roadmap() {
           <div className="relative flex flex-col gap-12">
             {roadmapSteps.map((step, index) => (
                <div key={index} className="flex items-start gap-6">
-                 <div className={`flex items-center justify-center w-10 h-10 rounded-full ${step.status === 'complete' ? 'bg-primary' : 'bg-muted'} ring-8 ring-secondary z-10 shrink-0`}>
+                 <div className={`flex items-center justify-center w-10 h-10 rounded-full ${step.status === 'complete' ? 'bg-primary' : 'bg-muted'} ring-8 ring-background z-10 shrink-0`}>
                   {step.status === 'complete' ? <CheckCircle className="h-6 w-6 text-primary-foreground" /> : <span className="text-muted-foreground font-bold">{index + 1}</span>}
                  </div>
                  <div>
-                    <h3 className="font-headline font-bold text-lg">{step.title}</h3>
+                    <h3 className="font-sans font-bold text-lg">{step.title}</h3>
                     <p className="text-muted-foreground">{step.description}</p>
                  </div>
                </div>

@@ -52,7 +52,7 @@ export function WhoFor() {
                   <Icon className="h-8 w-8 text-primary" />
                 </div>
               </div>
-              <h3 className="font-headline text-lg font-bold mb-2">{audience.title}</h3>
+              <h3 className="font-sans text-lg font-bold mb-2">{audience.title}</h3>
               <p className="text-sm text-muted-foreground">{audience.description}</p>
             </div>
           )})}

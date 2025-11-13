@@ -46,7 +46,7 @@ export function WhyAnmolix() {
                    <div className="p-3 bg-primary/10 rounded-full mb-3">
                      <Icon className="h-6 w-6 text-primary" />
                    </div>
-                    <CardTitle className="font-headline text-base font-bold">{benefit.title}</CardTitle>
+                    <CardTitle className="font-sans text-base font-bold">{benefit.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="p-0 mt-2">
                     <p className="text-xs text-muted-foreground">{benefit.description}</p>
