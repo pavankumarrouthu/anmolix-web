@@ -18,7 +18,7 @@ type Props = {
  * Example (index.html or global CSS):
  *   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
  *
- * If you prefer an exact pixel match, replace this SVG with vector paths exported from your design tool.
+ * If you prefer an exact pixel match, replace this SVG with vector paths from your design tool.
  */
 export default function AnmolixLogo({
   width = 220,
