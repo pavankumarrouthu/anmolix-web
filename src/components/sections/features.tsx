@@ -33,7 +33,7 @@ export function Features() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <Heading as="h2">The Anmolix Intelligence System</Heading>
-          <Subheading className="mt-4">One platform. Infinite possibilities.</Subheading>
+          <Subheading className="mt-4 mx-auto">One platform. Infinite possibilities.</Subheading>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
