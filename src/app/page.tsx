@@ -9,6 +9,7 @@ import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
 import { WhoFor } from "@/components/sections/who-for";
 import { Roadmap } from "@/components/sections/roadmap";
+import { JourneySection } from "@/components/sections/journey-section";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <WhyAnmolix />
         <Roadmap />
         <FounderNote />
+        <JourneySection />
         <Cta />
       </main>
       <Footer />

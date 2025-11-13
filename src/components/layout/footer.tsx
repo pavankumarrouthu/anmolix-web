@@ -22,7 +22,6 @@ export function Footer() {
         </div>
         <div className="mt-8 pt-6 border-t border-border/20 text-center text-sm text-muted-foreground">
             <p>© 2025 Anmolix Technologies — All Rights Reserved.</p>
-            <p className="mt-4 text-xs italic">Made with 💙 by humans — enhanced by intelligence.</p>
         </div>
       </div>
     </footer>

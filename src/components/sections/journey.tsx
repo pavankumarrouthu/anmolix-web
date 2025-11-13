@@ -1,8 +1,8 @@
-import { Heading, Subheading } from "@/components/ui/heading";
+import { Heading } from "@/components/ui/heading";
 
-export function FounderNote() {
+export function JourneySection() {
   return (
-    <section id="founder-note" className="py-16 md:py-24">
+    <section id="journey" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto">
           <Heading as="h2" className="mb-4">
