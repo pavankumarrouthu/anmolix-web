@@ -37,7 +37,7 @@ export function Header() {
       className={cn(
         'sticky top-0 z-50 w-full transition-all duration-300',
         isScrolled
-          ? 'bg-background/80 backdrop-blur-sm border-b border-border/10'
+          ? 'bg-background/80 backdrop-blur-sm border-b border-border'
           : 'bg-transparent'
       )}
     >
@@ -71,7 +71,7 @@ export function Header() {
               <SheetTitle className="sr-only">Mobile Navigation Menu</SheetTitle>
               <SheetDescription className="sr-only">Main navigation links for the Anmolix website.</SheetDescription>
               <div className="flex h-full flex-col">
-                <div className="flex items-center justify-between border-b border-border/20 pb-4">
+                <div className="flex items-center justify-between border-b border-border pb-4">
                   <Logo />
                    <SheetTrigger asChild>
                     <Button variant="ghost" size="icon">

@@ -8,19 +8,16 @@ const featureCategories = [
     icon: Bot,
     title: "Productivity Intelligence",
     description: "Smart task automation, AI-based prioritization, and focus insights to help you work at your best.",
-    philosophy: "Think. Connect. Perform.",
   },
   {
     icon: Users,
     title: "Collaboration Hub",
     description: "A unified communication space for chat, projects, and teamwork — built to connect ideas seamlessly.",
-    philosophy: "Automate. Learn. Adapt.",
   },
   {
     icon: BarChart3,
     title: "Performance Analytics",
     description: "Real-time dashboards and predictive analytics that turn data into clarity and progress.",
-    philosophy: "Measure. Improve. Succeed.",
   },
   {
     icon: Atom,
@@ -43,7 +40,7 @@ export function Features() {
           {featureCategories.map((category, index) => {
             const Icon = category.icon;
             return (
-              <Card key={index} className="bg-secondary/30 shadow-lg hover:shadow-primary/20 hover:-translate-y-1 transition-all duration-300 flex flex-col border-0 rounded-2xl">
+              <Card key={index} className="bg-card shadow-lg hover:shadow-primary/20 hover:-translate-y-1 transition-all duration-300 flex flex-col rounded-2xl">
                 <CardHeader>
                   <div className="flex items-center justify-between gap-3">
                     <div className="flex items-center gap-4">
@@ -57,7 +54,6 @@ export function Features() {
                 </CardHeader>
                 <CardContent className="flex-grow flex flex-col">
                   <p className="text-muted-foreground text-sm mb-4 flex-grow">{category.description}</p>
-                  {category.philosophy && <p className="text-xs text-center font-semibold tracking-wider uppercase text-primary/80 pt-4 border-t border-border/20">{category.philosophy}</p>}
                 </CardContent>
               </Card>
             );

@@ -14,18 +14,21 @@ export function About() {
           </Subheading>
           <p className="text-primary font-semibold">Work smarter. Collaborate faster. Grow intelligently.</p>
         </div>
-        <div className="mt-12 flex flex-wrap justify-center gap-6 text-center">
-            <div className="flex items-center gap-3 rounded-full bg-secondary/50 px-4 py-2 text-sm">
-              <Rocket className="h-4 w-4 text-primary" />
-              <span>Unified productivity and collaboration</span>
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+            <div className="flex flex-col items-center gap-3 rounded-lg border bg-card p-6">
+              <Rocket className="h-8 w-8 text-primary" />
+              <h3 className="font-bold">Unified Productivity</h3>
+              <p className="text-sm text-muted-foreground">Streamline your work with a single, intelligent platform.</p>
             </div>
-            <div className="flex items-center gap-3 rounded-full bg-secondary/50 px-4 py-2 text-sm">
-              <BrainCircuit className="h-4 w-4 text-primary" />
-              <span>AI-powered insights for modern teams</span>
+            <div className="flex flex-col items-center gap-3 rounded-lg border bg-card p-6">
+              <BrainCircuit className="h-8 w-8 text-primary" />
+              <h3 className="font-bold">AI-Powered Insights</h3>
+              <p className="text-sm text-muted-foreground">Make better decisions with data-driven clarity.</p>
             </div>
-            <div className="flex items-center gap-3 rounded-full bg-secondary/50 px-4 py-2 text-sm">
-              <Globe className="h-4 w-4 text-primary" />
-              <span>Built for students, startups, and enterprises</span>
+            <div className="flex flex-col items-center gap-3 rounded-lg border bg-card p-6">
+              <Globe className="h-8 w-8 text-primary" />
+               <h3 className="font-bold">For Every Scale</h3>
+              <p className="text-sm text-muted-foreground">Built for students, startups, and enterprises.</p>
             </div>
         </div>
       </div>

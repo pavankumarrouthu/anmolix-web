@@ -46,7 +46,7 @@ export function WhoFor() {
           {audiences.map((audience, index) => {
              const Icon = audience.icon;
             return(
-            <div key={index} className="text-center p-6 bg-background/50 rounded-2xl shadow-sm hover:shadow-primary/10 hover:scale-105 transition-all duration-300">
+            <div key={index} className="text-center p-6 bg-background rounded-2xl shadow-sm hover:shadow-primary/10 hover:scale-105 transition-all duration-300">
               <div className="flex justify-center mb-4">
                 <div className="bg-primary/10 p-3 rounded-full">
                   <Icon className="h-8 w-8 text-primary" />

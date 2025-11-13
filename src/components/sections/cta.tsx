@@ -3,14 +3,8 @@ import { Heading, Subheading } from "@/components/ui/heading";
 
 export function Cta() {
   return (
-    <section id="contact" className="py-16 md:py-24 bg-secondary/30 text-foreground">
-      <div className="container mx-auto px-4 text-center relative">
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 -z-10 h-full w-full"
-        >
-          <div className="absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[20%] translate-y-[20%] rounded-full bg-[radial-gradient(circle_farthest-side,hsl(var(--primary)/0.1),rgba(255,255,255,0))]"></div>
-        </div>
+    <section id="contact" className="py-16 md:py-24 bg-secondary/30 text-secondary-foreground">
+      <div className="container mx-auto px-4 text-center">
         <Heading as="h2" className="mb-4">
           Shape the Future of Work with Anmolix
         </Heading>
@@ -24,7 +18,7 @@ export function Cta() {
               Join the Waitlist
             </a>
           </Button>
-          <Button size="lg" variant="outline" asChild>
+          <Button size="lg" variant="outline" className="bg-background" asChild>
             <a href="mailto:contact@anmolix.com">
               Collaborate with Us
             </a>
