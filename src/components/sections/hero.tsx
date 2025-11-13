@@ -28,7 +28,6 @@ export function Hero() {
             </Link>
           </Button>
         </div>
-        <p className="mt-8 text-sm text-muted-foreground">Currently in Pilot Testing • Beta Launch Coming Soon</p>
       </div>
     </section>
   );

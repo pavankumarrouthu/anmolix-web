@@ -24,7 +24,6 @@ export function Cta() {
             </a>
           </Button>
         </div>
-         <p className="mt-8 text-sm text-muted-foreground">Already over 3,000 early users and growing every week.</p>
       </div>
     </section>
   );
