@@ -55,7 +55,7 @@ export function WhyAnmolix() {
             )
           })}
         </div>
-        <p className="text-center mt-12 text-muted-foreground italic">Anmolix isn’t replacing human effort — it’s amplifying it.</p>
+        <p className="text-center mt-12 text-muted-foreground italic">Anmolix isn’t replacing human effort - it’s amplifying it.</p>
       </div>
     </section>
   );

@@ -40,7 +40,7 @@ export function WhoFor() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <Heading as="h2">Built for Every Visionary</Heading>
-          <Subheading className="mt-4 mx-auto">From learners to leaders — Anmolix adapts to how you work.</Subheading>
+          <Subheading className="mt-4 mx-auto">From learners to leaders, Anmolix adapts to how you work.</Subheading>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {audiences.map((audience, index) => {
@@ -57,7 +57,7 @@ export function WhoFor() {
             </div>
           )})}
         </div>
-        <p className="text-center mt-12 text-muted-foreground">Whatever your goal — Anmolix grows with you.</p>
+        <p className="text-center mt-12 text-muted-foreground">Whatever your goal - Anmolix grows with you.</p>
       </div>
     </section>
   );

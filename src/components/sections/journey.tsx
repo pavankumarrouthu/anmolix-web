@@ -10,7 +10,7 @@ export function FounderNote() {
           </Heading>
           <blockquote className="mt-6">
             <p className="text-xl italic text-muted-foreground">
-              “We started Anmolix to redefine how people and organizations experience productivity. Intelligence shouldn’t replace human potential — it should elevate it.”
+              “We started Anmolix to redefine how people and organizations experience productivity. Intelligence shouldn’t replace human potential, it should elevate it.”
             </p>
             <footer className="mt-6">
               <p className="font-bold text-foreground">Routhu Pavan Kumar</p>

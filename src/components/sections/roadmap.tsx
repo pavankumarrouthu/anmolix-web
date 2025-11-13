@@ -34,12 +34,10 @@ export function Roadmap() {
               const Icon = step.icon;
               const isLeft = index % 2 === 0;
               return (
-                <div key={index} className="relative flex items-center justify-center">
+                <div key={index} className={`relative flex items-center ${isLeft ? 'justify-start' : 'justify-end'}`}>
                   <div className={`w-1/2 ${isLeft ? 'pr-8 text-right' : 'pl-8 text-left'}`}>
-                     <div className={`p-6 bg-card/50 rounded-2xl border border-border inline-block ${isLeft ? 'mr-[-1px]' : 'ml-[-1px]'}`}>
-                        <div className="flex items-center gap-4">
-                          <h3 className="font-sans font-bold text-lg">{step.title}</h3>
-                        </div>
+                     <div className="p-6 bg-card/50 rounded-2xl border border-border inline-block max-w-xs">
+                        <h3 className="font-sans font-bold text-lg">{step.title}</h3>
                         <p className="text-muted-foreground mt-1">{step.description}</p>
                      </div>
                   </div>

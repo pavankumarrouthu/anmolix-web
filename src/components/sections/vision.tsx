@@ -11,7 +11,7 @@ export function Vision() {
           <div className="bg-card/50 border border-border p-8 rounded-2xl text-center">
             <h3 className="text-2xl font-sans font-bold mb-3 text-primary">Vision</h3>
             <Subheading className="text-muted-foreground">
-             To create a world where work becomes effortless — powered by intelligence, guided by purpose.
+             To create a world where work becomes effortless - powered by intelligence, guided by purpose.
             </Subheading>
           </div>
           <div className="bg-card/50 border border-border p-8 rounded-2xl text-center">

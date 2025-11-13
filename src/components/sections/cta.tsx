@@ -9,7 +9,7 @@ export function Cta() {
           Shape the Future of Work with Anmolix
         </Heading>
         <Subheading className="mx-auto mb-8 max-w-2xl">
-          Join our journey toward intelligent productivity. Whether you’re a student, founder, or business leader — Anmolix is built for how you grow.
+          Join our journey toward intelligent productivity. Whether you’re a student, founder, or business leader - Anmolix is built for how you grow.
         </Subheading>
 
         <div className="flex flex-wrap items-center justify-center gap-4">
