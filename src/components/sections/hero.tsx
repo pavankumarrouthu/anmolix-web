@@ -15,7 +15,7 @@ export function Hero() {
           Empower Your Work - Intelligently
         </Heading>
         <p className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground mb-10">
-          Anmolix is a platfrom that enables AI by bridging productivity with collaboration Ecosystem that helps individuals, founders, and teams work smarter, faster, and more meaningfully - all in one intelligent space.
+          Anmolix is a platform that enables AI by bridging productivity with collaboration Ecosystem that helps individuals, founders, and teams work smarter, faster, and more meaningfully - all in one intelligent space.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <ComingSoonDialog>
