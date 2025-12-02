@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetDescription, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
 import { Logo } from './logo';
+import { ComingSoonDialog } from '../ComingSoonDialog';
 
 const navLinks = [
   { href: '#about', label: 'About' },
@@ -55,9 +56,9 @@ export function Header() {
           ))}
         </nav>
         <div className="hidden md:block">
-          <Button asChild>
-            <Link href="#contact">Sign Up</Link>
-          </Button>
+          <ComingSoonDialog>
+            <Button>Sign Up</Button>
+          </ComingSoonDialog>
         </div>
         <div className="md:hidden">
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
@@ -93,9 +94,9 @@ export function Header() {
                   ))}
                 </nav>
                 <div className="mt-auto">
-                  <Button asChild className="w-full">
-                    <Link href="#contact" onClick={handleLinkClick}>Sign Up</Link>
-                  </Button>
+                  <ComingSoonDialog>
+                     <Button className="w-full" onClick={handleLinkClick}>Sign Up</Button>
+                  </ComingSoonDialog>
                 </div>
               </div>
             </SheetContent>
