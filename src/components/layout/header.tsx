@@ -56,7 +56,7 @@ export function Header() {
         </nav>
         <div className="hidden md:block">
           <Button asChild>
-            <Link href="#contact">Join the Waitlist</Link>
+            <Link href="#contact">Sign Up</Link>
           </Button>
         </div>
         <div className="md:hidden">
@@ -94,7 +94,7 @@ export function Header() {
                 </nav>
                 <div className="mt-auto">
                   <Button asChild className="w-full">
-                    <Link href="#contact" onClick={handleLinkClick}>Join Waitlist</Link>
+                    <Link href="#contact" onClick={handleLinkClick}>Sign Up</Link>
                   </Button>
                 </div>
               </div>

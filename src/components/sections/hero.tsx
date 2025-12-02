@@ -19,7 +19,7 @@ export function Hero() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Button size="lg" asChild>
             <Link href="#contact">
-              Join the Waitlist
+              Sign Up
             </Link>
           </Button>
           <Button size="lg" variant="secondary" asChild>
