@@ -30,7 +30,7 @@ export function About() {
             Where Productivity Meets Intelligence
           </Heading>
           <p className="text-lg text-muted-foreground">
-            Anmolix is building the next-generation workspace - bridging productivity with collaboration into one intelligent platform. We help individuals and organizations streamline work, automate repetitive tasks, and enable AI in the workplace for better smoother workflows and better results.
+            Anmolix is building the next-generation workspace, bridging productivity with collaboration in one intelligent platform. We help people and organizations streamline work, automate tasks, and enable AI for smoother workflows and better results.
           </p>
         </div>
 
