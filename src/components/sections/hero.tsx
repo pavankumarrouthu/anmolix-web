@@ -18,7 +18,7 @@ export function Hero() {
           Anmolix is a platform that enables AI by bridging productivity with collaboration in an ecosystem that helps individuals, founders, and teams work smarter, faster, and more meaningfully—all in one intelligent space.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Button size="lg" variant="secondary" asChild>
+          <Button size="lg" asChild>
             <Link href="#vision">
               Explore Vision<ArrowRight className="ml-2 h-4 w-4" />
             </Link>
