@@ -11,10 +11,10 @@ export function Hero() {
       <div className="container mx-auto px-4 text-center relative">
         <p className="mb-4 font-semibold text-primary">For Students. For Founders. For Teams. For You.</p>
         <Heading as="h1" className="mb-6">
-          Empower Your Work. Intelligently.
+          Empower Your Work - Intelligently
         </Heading>
         <p className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground mb-10">
-          Anmolix is an AI-driven productivity and collaboration ecosystem that helps individuals, founders, and teams work smarter, faster, and more meaningfully — all in one intelligent space.
+          Anmolix is a platfrom that enables AI by bridging productivity with collaboration Ecosystem that helps individuals, founders, and teams work smarter, faster, and more meaningfully - all in one intelligent space.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Button size="lg" asChild>
@@ -24,7 +24,7 @@ export function Hero() {
           </Button>
           <Button size="lg" variant="secondary" asChild>
             <Link href="#vision">
-              Explore the Vision <ArrowRight className="ml-2 h-4 w-4" />
+              Explore<ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </Button>
         </div>
