@@ -10,7 +10,7 @@ const highlights = [
   },
   {
     icon: BrainCircuit,
-    title: "AI-Powered Insights",
+    title: "Enabling AI in Workplace",
     text: "Automate tasks and gain intelligent recommendations to work smarter.",
   },
   {
@@ -30,7 +30,7 @@ export function About() {
             Where Productivity Meets Intelligence
           </Heading>
           <p className="text-lg text-muted-foreground">
-            Anmolix is building the next-generation workspace - uniting productivity, collaboration, and analytics into one intelligent platform. We help individuals and organizations streamline work, automate repetitive tasks, and make better decisions powered by AI-driven insights.
+            Anmolix is building the next-generation workspace - bridging productivity with collaboration into one intelligent platform. We help individuals and organizations streamline work, automate repetitive tasks, and Enabling AI to get better results.
           </p>
         </div>
 
