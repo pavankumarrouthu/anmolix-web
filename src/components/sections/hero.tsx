@@ -15,17 +15,15 @@ export function Hero() {
           Empower Your Work - Intelligently
         </Heading>
         <p className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground mb-10">
-          Anmolix is a platform that enables AI by bridging productivity with collaboration Ecosystem that helps individuals, founders, and teams work smarter, faster, and more meaningfully - all in one intelligent space.
+          Anmolix is a platform that enables AI by bridging productivity with collaboration in an ecosystem that helps individuals, founders, and teams work smarter, faster, and more meaningfully—all in one intelligent space.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <ComingSoonDialog>
-            <Button size="lg">
-              Sign Up
-            </Button>
+            <Button size="lg">Sign Up <ArrowRight className="ml-2" /></Button>
           </ComingSoonDialog>
           <Button size="lg" variant="secondary" asChild>
             <Link href="#vision">
-              Explore<ArrowRight className="ml-2 h-4 w-4" />
+              Explore Vision<ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </Button>
         </div>
