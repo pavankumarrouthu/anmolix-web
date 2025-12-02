@@ -1,5 +1,4 @@
 import { About } from "@/components/sections/about";
-import { Cta } from "@/components/sections/cta";
 import { Features } from "@/components/sections/features";
 import { Hero } from "@/components/sections/hero";
 import { FounderNote } from "@/components/sections/founder-note";
@@ -23,7 +22,6 @@ export default function Home() {
         <WhyAnmolix />
         <Roadmap />
         <FounderNote />
-        <Cta />
       </main>
       <Footer />
     </div>
