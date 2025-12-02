@@ -56,7 +56,7 @@ export function Header() {
         </nav>
         <div className="hidden md:block">
           <Button asChild>
-            <Link href="#contact">Join the Waitlist</Link>
+            <Link href="#contact">Sign Up</Link>
           </Button>
         </div>
         <div className="md:hidden">
