@@ -45,13 +45,13 @@ export default function AnmolixLogo({
       {/* Logo Icon: Square with 'a' */}
       <g>
         {/* The square background */}
-        <rect x="0" y="40" width="200" height="200" rx="40" fill="white" />
+        <rect x="0" y="40" width="200" height="200" rx="40" fill="currentColor" />
         
         {/* The letter 'a' inside the square. Positioned carefully. */}
         <text
           x="100"
           y="180" // Adjusted for vertical centering
-          fill={color || "currentColor"}
+          fill="white"
           fontFamily="'Poppins', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial"
           fontWeight={700}
           fontSize={160}
@@ -67,7 +67,7 @@ export default function AnmolixLogo({
       <text
         x="240" // Positioned to the right of the icon
         y="170"
-        fill="white"
+        fill="currentColor"
         fontFamily="'Poppins', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial"
         fontWeight={700}
         fontSize={160}
