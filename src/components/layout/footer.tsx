@@ -20,9 +20,6 @@ export function Footer() {
               <p className="text-sm text-muted-foreground">📍 Amaravati, Andhra Pradesh</p>
           </div>
         </div>
-        <div className="mt-8 pt-6 border-t border-border/20 text-center text-sm text-muted-foreground">
-            <p>© 2024 Anmolix Technologies — All Rights Reserved.</p>
-        </div>
       </div>
     </footer>
   );
