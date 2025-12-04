@@ -6,7 +6,7 @@ const highlights = [
   {
     icon: Layers,
     title: "Unified Ecosystem",
-    text: "A single platform for productivity, collaboration, and project management.",
+    text: "Anmolix brings your team’s communication, coordination, and execution into one intelligent flow — no silos, no switching.",
   },
   {
     icon: BrainCircuit,
