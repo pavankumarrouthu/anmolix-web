@@ -12,7 +12,7 @@ type Props = {
 
 /**
  * AnmolixLogo - responsive SVG logo component.
- * Renders the name "Anmolix" as text.
+ * Renders the name "anmolix" as text.
  *
  * Note: for best visual match install/import a geometric sans font like "Poppins" or "Inter".
  */
@@ -21,7 +21,7 @@ export default function AnmolixLogo({
   height,
   color,
   className,
-  title = "Anmolix",
+  title = "anmolix",
   ariaHidden = false,
 }: Props) {
   // ViewBox is sized to fit the text.
@@ -41,7 +41,7 @@ export default function AnmolixLogo({
     >
       {ariaHidden ? null : <title>{title}</title>}
       
-      {/* Text part of the logo: "Anmolix" */}
+      {/* Text part of the logo: "anmolix" */}
       <text
         x="0"
         y="170"
@@ -53,7 +53,7 @@ export default function AnmolixLogo({
         dominantBaseline="alphabetic"
         textAnchor="start"
       >
-        Anmolix
+        anmolix
       </text>
     </svg>
   );
