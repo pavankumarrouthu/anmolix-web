@@ -4,7 +4,7 @@ import React from "react";
 type Props = {
   width?: number | string;      // e.g. 120 or "100%"
   height?: number | string;     // optional; if omitted, scales with width
-  color?: string;               // primary color of the logo
+  color?: string;               // primary color of the logo text
   className?: string;
   title?: string;               // accessible title
   ariaHidden?: boolean;         // set true if decorative
@@ -12,13 +12,9 @@ type Props = {
 
 /**
  * AnmolixLogo - responsive SVG logo component.
- * Uses an inline <text> element so it's easy to style.
+ * Features a stylized "a" in a square followed by the rest of the name.
  *
  * Note: for best visual match install/import a geometric sans font like "Poppins" or "Inter".
- * Example (index.html or global CSS):
- *   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
- *
- * If you prefer an exact pixel match, replace this SVG with vector paths from your design tool.
  */
 export default function AnmolixLogo({
   width = 220,
@@ -28,9 +24,10 @@ export default function AnmolixLogo({
   title = "Anmolix",
   ariaHidden = false,
 }: Props) {
-  // If height isn't provided, height will scale with viewBox aspect ratio (we use 4:1).
-  const viewBoxWidth = 1000;
-  const viewBoxHeight = 240; // wide, short rectangle to match text layout
+  // If height isn't provided, height will scale with viewBox aspect ratio.
+  // ViewBox is slightly wider to accommodate the icon and text.
+  const viewBoxWidth = 1100;
+  const viewBoxHeight = 240;
 
   return (
     <svg
@@ -45,23 +42,40 @@ export default function AnmolixLogo({
     >
       {ariaHidden ? null : <title>{title}</title>}
 
-      {/* Optional background rectangle for alignment/testing (comment out) */}
-      {/* <rect width="100%" height="100%" fill="transparent" /> */}
-
-      {/* Text - adjust font-family/weight for closer match */}
+      {/* Logo Icon: Square with 'a' */}
+      <g>
+        {/* The square background */}
+        <rect x="0" y="40" width="200" height="200" rx="40" fill="white" />
+        
+        {/* The letter 'a' inside the square. Positioned carefully. */}
+        <text
+          x="100"
+          y="180" // Adjusted for vertical centering
+          fill={color || "currentColor"}
+          fontFamily="'Poppins', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial"
+          fontWeight={700}
+          fontSize={160}
+          letterSpacing={-6}
+          dominantBaseline="middle"
+          textAnchor="middle"
+        >
+          a
+        </text>
+      </g>
+      
+      {/* Text part of the logo: "nmolix" */}
       <text
-        x="50"
+        x="240" // Positioned to the right of the icon
         y="170"
-        fill={color || "currentColor"}
+        fill="white"
         fontFamily="'Poppins', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial"
         fontWeight={700}
         fontSize={160}
         letterSpacing={-6}
-        // Use dominantBaseline & textAnchor for consistent vertical alignment
         dominantBaseline="alphabetic"
         textAnchor="start"
       >
-        anmolix
+        nmolix
       </text>
     </svg>
   );
