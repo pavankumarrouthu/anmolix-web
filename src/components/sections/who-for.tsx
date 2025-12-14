@@ -1,5 +1,5 @@
 import { Heading, Subheading } from "@/components/ui/heading";
-import { Users, Rocket, Building, Briefcase, User, GraduationCap } from "lucide-react";
+import { Users, Rocket, Building, Briefcase } from "lucide-react";
 
 const audiences = [
   {
