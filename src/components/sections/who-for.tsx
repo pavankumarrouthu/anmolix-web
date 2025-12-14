@@ -3,16 +3,6 @@ import { Users, Rocket, Building, Briefcase, User, GraduationCap } from "lucide-
 
 const audiences = [
   {
-    icon: GraduationCap,
-    title: "Students",
-    description: "Organize studies, manage projects, and track progress with AI assistance.",
-  },
-  {
-    icon: User,
-    title: "Individuals",
-    description: "Plan goals, stay consistent, and understand your productivity patterns.",
-  },
-  {
     icon: Briefcase,
     title: "Founders",
     description: "Lead teams, measure performance, and make data-driven decisions.",
@@ -42,7 +32,7 @@ export function WhoFor() {
           <Heading as="h2">Built for Every Visionary</Heading>
           <Subheading className="mt-4 mx-auto">From learners to leaders, Anmolix adapts to how you work.</Subheading>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {audiences.map((audience, index) => {
              const Icon = audience.icon;
             return(
