@@ -1,5 +1,12 @@
 import { Header } from "@/components/layout/header";
-import { Hero } from "@/components/sections/hero";
+import { Hero } from "@/components/sections/hero-new";
+import { About } from "@/components/sections/about";
+import { Features } from "@/components/sections/features";
+import { Vision } from "@/components/sections/vision";
+import { WhoFor } from "@/components/sections/who-for";
+import { FounderNote } from "@/components/sections/founder-note";
+import { Roadmap } from "@/components/sections/roadmap";
+import { WhyAnmolix } from "@/components/sections/why-anmolix";
 import { Footer } from "@/components/layout/footer";
 
 export default function Home() {
@@ -8,6 +15,13 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
+        <About />
+        <Features />
+        <Vision />
+        <WhoFor />
+        <FounderNote />
+        <Roadmap />
+        <WhyAnmolix />
       </main>
       <Footer />
     </div>
