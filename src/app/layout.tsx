@@ -2,22 +2,16 @@ import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
-import { Inter, Poppins } from 'next/font/google'
+import { Inter } from 'next/font/google';
 
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
-})
-
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400', '600', '700'],
-  variable: '--font-poppins',
-})
+});
 
 export const metadata: Metadata = {
-  title: 'Anmolix – The Future of Intelligent Work',
-  description: 'Anmolix is redefining productivity and collaboration for modern teams through intelligent automation, data-driven insights, and a unified workspace.',
+  title: 'Anmolix — Stop managing dates. Start shipping code.',
+  description: 'Anmolix is the autonomous coordination agent that predicts delays and auto-fixes your engineering schedule — before deadlines slip.',
 };
 
 export default function RootLayout({
@@ -26,8 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={cn("font-sans antialiased", inter.variable, poppins.variable)}>
+    <html lang="en" className="dark">
+      <body className={cn("font-sans tracking-tight", inter.variable)}>
         {children}
         <Toaster />
       </body>
