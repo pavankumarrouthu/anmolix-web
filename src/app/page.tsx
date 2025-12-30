@@ -8,7 +8,6 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
-        {/* Other sections will be added here based on the new design */}
       </main>
       <Footer />
     </div>
