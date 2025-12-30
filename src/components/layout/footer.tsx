@@ -1,24 +1,31 @@
-import { Linkedin, Mail } from 'lucide-react';
-import { Logo } from './logo';
+import Link from "next/link";
+import { Logo } from "./logo";
 
 export function Footer() {
   return (
-    <footer className="bg-secondary/50 border-t border-border">
-      <div className="container mx-auto px-4 py-8">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
-          <div className="flex flex-col items-center md:items-start gap-2">
+    <footer className="border-t border-white/10">
+      <div className="container mx-auto px-4 py-10">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="flex items-center gap-4">
             <Logo />
-            <p className="text-sm text-muted-foreground mt-2">
-              Empowering Productivity. Redefining Intelligence.
+            <p className="text-sm text-muted-foreground">
+              Made for Engineers. Built for Reality.
             </p>
           </div>
-          <div className="flex flex-col items-center gap-4">
-              <div className="flex items-center gap-5">
-                <a href="https://lnkd.in/gi8grYSG" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors"><Linkedin className="h-5 w-5" /></a>
-                <a href="mailto:pavanrouthu.ai@gmail.com" className="text-muted-foreground hover:text-foreground transition-colors"><Mail className="h-5 w-5" /></a>
-              </div>
-              <p className="text-sm text-muted-foreground">📍Amaravati, Andhra Pradesh</p>
-          </div>
+          <nav className="flex items-center gap-6 text-sm">
+            <Link href="#manifesto" className="text-muted-foreground hover:text-foreground transition-colors">
+              Manifesto
+            </Link>
+            <Link href="#changelog" className="text-muted-foreground hover:text-foreground transition-colors">
+              Changelog
+            </Link>
+            <Link href="#login" className="text-muted-foreground hover:text-foreground transition-colors">
+              Login
+            </Link>
+            <Link href="#access" className="text-muted-foreground hover:text-foreground transition-colors">
+              Request Access
+            </Link>
+          </nav>
         </div>
       </div>
     </footer>
