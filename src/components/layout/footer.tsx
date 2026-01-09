@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Logo } from "./logo";
+import AnmolixLogo from "./AnmolixLogo";
 
 export function Footer() {
   return (
@@ -7,7 +7,7 @@ export function Footer() {
       <div className="container mx-auto px-4 py-10">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-4">
-            <Logo />
+            <AnmolixLogo width={120} height={30} />
             <p className="text-sm text-muted-foreground">
               Made for Engineers. Built for Reality.
             </p>
@@ -22,7 +22,7 @@ export function Footer() {
             <Link href="#login" className="text-muted-foreground hover:text-foreground transition-colors">
               Login
             </Link>
-            <Link href="#access" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="#beta" className="text-muted-foreground hover:text-foreground transition-colors">
               Request Access
             </Link>
           </nav>

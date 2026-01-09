@@ -1,6 +1,6 @@
 'use client';
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -20,14 +20,10 @@ export function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter text-foreground max-w-4xl mx-auto">
-            Stop managing dates. Start shipping code.
+            The First Agentic Co-ordination System.
           </h1>
-          <p className="max-w-2xl mx-auto mt-6 text-lg md:text-xl text-muted-foreground">
-            Anmolix is the autonomous coordination agent that predicts delays
-            and auto-fixes your engineering schedule — before deadlines slip.
-          </p>
-          <p className="mt-4 text-sm text-muted-foreground/80">
-            Built with Behavioral Intelligence for real engineering teams.
+          <p className="max-w-3xl mx-auto mt-6 text-lg md:text-xl text-muted-foreground">
+            Anmolix is the autonomous layer that sits between your team and their workflows. We use Behavioral Intelligence to predict delays, negotiate schedules, and update workflows—so your managers don't have to.
           </p>
         </motion.div>
 
@@ -38,7 +34,7 @@ export function Hero() {
           className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <Button size="lg" className="bg-primary text-primary-foreground shadow-lg shadow-primary/20 hover:bg-primary/90">
-            Request Private Beta <ArrowRight className="ml-2 h-5 w-5" />
+            Join the Private Beta <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
           <Button size="lg" variant="outline" className="bg-transparent border-border hover:bg-secondary">
             Read the Manifesto
@@ -59,12 +55,8 @@ export function Hero() {
             }}
           >
              <div className="text-center text-muted-foreground">
-                <p className="font-medium">[ Animated "Auto-Fix Moment" Visual ]</p>
-                <p className="text-sm mt-2">Task delay → AI suggestion → one-click application</p>
+                <p className="font-medium">[ Chat message → Database action UI animation ]</p>
+                <p className="text-sm mt-2">"I need 2 days" → "Due Date Updated + Notification Sent."</p>
              </div>
           </div>
         </motion.div>
-      </div>
-    </section>
-  );
-}

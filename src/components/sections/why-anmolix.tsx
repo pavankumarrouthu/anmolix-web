@@ -1,32 +1,22 @@
 import { Heading } from "@/components/ui/heading";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Layers, ShieldCheck, Zap, BarChart3, Scaling, Rocket } from "lucide-react";
+import { GitCommit, Bot, MessageSquare, ListTree } from "lucide-react";
 
 const benefits = [
   {
-    icon: Layers,
-    title: "Unified Intelligence",
-    description: "Productivity and collaboration, finally together."
+    icon: ListTree,
+    title: "Beyond Static Lists",
+    description: "Traditional tools are passive databases. Anmolix is an active system that models behavioral variance, not just static math."
   },
   {
-    icon: Zap,
-    title: "Seamless Automation",
-    description: "Let AI handle the busywork."
+    icon: Bot,
+    title: "Active Agents, Not Passive UI",
+    description: "Instead of waiting for clicks, our agents proactively update schedules, notify stakeholders, and manage dependencies."
   },
   {
-    icon: ShieldCheck,
-    title: "Secure & Scalable",
-    description: "Enterprise-grade reliability for all users."
-  },
-  {
-    icon: Scaling,
-    title: "Inclusive Design",
-    description: "Built for individuals to enterprises."
-  },
-  {
-    icon: Rocket,
-    title: "Future-Ready",
-    description: "Advancing with AI + Quantum innovation."
+    icon: MessageSquare,
+    title: "Anchored Decisions, Not Floating Chat",
+    description: "Context isn't lost in a separate tool. Decisions are anchored directly to tasks, creating a permanent audit trail."
   },
 ];
 
@@ -35,9 +25,9 @@ export function WhyAnmolix() {
     <section id="why-anmolix" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <Heading as="h2">Built Different. Built for You.</Heading>
+          <Heading as="h2">Beyond Static Management</Heading>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {benefits.map((benefit, index) => {
             const Icon = benefit.icon;
             return (
@@ -55,7 +45,7 @@ export function WhyAnmolix() {
             )
           })}
         </div>
-        <p className="text-center mt-12 text-muted-foreground italic">Anmolix isn’t replacing human effort - it’s amplifying it.</p>
+        <p className="text-center mt-12 text-muted-foreground italic">Anmolix isn't another project management tool. It's a new category.</p>
       </div>
     </section>
   );

@@ -4,8 +4,6 @@ import { About } from "@/components/sections/about";
 import { Features } from "@/components/sections/features";
 import { Vision } from "@/components/sections/vision";
 import { WhoFor } from "@/components/sections/who-for";
-import { FounderNote } from "@/components/sections/founder-note";
-import { Roadmap } from "@/components/sections/roadmap";
 import { WhyAnmolix } from "@/components/sections/why-anmolix";
 import { Footer } from "@/components/layout/footer";
 
@@ -17,10 +15,8 @@ export default function Home() {
         <Hero />
         <About />
         <Features />
-        <Vision />
         <WhoFor />
-        <FounderNote />
-        <Roadmap />
+        <Vision />
         <WhyAnmolix />
       </main>
       <Footer />
