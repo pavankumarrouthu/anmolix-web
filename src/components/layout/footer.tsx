@@ -9,23 +9,26 @@ export function Footer() {
           <div className="flex items-center gap-4">
             <AnmolixLogo width={120} height={30} />
             <p className="text-sm text-muted-foreground">
-              Built for the Agentic Future.
+              The Agentic Workspace.
             </p>
           </div>
           <nav className="flex items-center gap-6 text-sm">
-            <Link href="#vision" className="text-muted-foreground hover:text-foreground transition-colors">
-              Vision
+            <Link href="#product" className="text-muted-foreground hover:text-foreground transition-colors">
+              Product
             </Link>
             <Link href="#manifesto" className="text-muted-foreground hover:text-foreground transition-colors">
-              Manifest
+              Manifesto
             </Link>
-            <Link href="#beta" className="text-muted-foreground hover:text-foreground transition-colors">
-              Request Access
+            <Link href="#careers" className="text-muted-foreground hover:text-foreground transition-colors">
+              Careers
+            </Link>
+            <Link href="#login" className="text-muted-foreground hover:text-foreground transition-colors">
+              Login
             </Link>
           </nav>
         </div>
         <div className="mt-6 text-center text-xs text-muted-foreground/50">
-          Amaravati • Global
+          © {new Date().getFullYear()} Anmolix Inc.
         </div>
       </div>
     </footer>

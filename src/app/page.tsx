@@ -3,9 +3,9 @@ import { Hero } from "@/components/sections/hero-new";
 import { About } from "@/components/sections/about";
 import { Features } from "@/components/sections/features";
 import { Vision } from "@/components/sections/vision";
-import { WhoFor } from "@/components/sections/who-for";
 import { WhyAnmolix } from "@/components/sections/why-anmolix";
 import { Footer } from "@/components/layout/footer";
+import { Roadmap } from "@/components/sections/roadmap";
 
 export default function Home() {
   return (
@@ -13,9 +13,9 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
-        <About />
         <Features />
-        <WhoFor />
+        <Roadmap />
+        <About />
         <Vision />
         <WhyAnmolix />
       </main>

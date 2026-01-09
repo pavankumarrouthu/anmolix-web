@@ -1,6 +1,6 @@
 'use client';
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, PlayCircle } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -19,11 +19,11 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter text-foreground max-w-4xl mx-auto">
-            Your Work, Orchestrated.
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter text-foreground max-w-4xl mx-auto font-space-grotesk">
+            The Era of Agentic Co-ordination.
           </h1>
           <p className="max-w-3xl mx-auto mt-6 text-lg md:text-xl text-muted-foreground">
-            Move beyond management. Enter the age of adaptive intelligence that aligns your team before you even ask.
+            Move beyond static project management. Anmolix is the adaptive intelligence that orchestrates your team’s work, predicts delays, and negotiates time autonomously.
           </p>
         </motion.div>
 
@@ -34,7 +34,10 @@ export function Hero() {
           className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <Button size="lg" className="bg-primary text-primary-foreground shadow-lg shadow-primary/20 hover:bg-primary/90">
-            Request Access <ArrowRight className="ml-2 h-5 w-5" />
+            Request Early Access <ArrowRight className="ml-2 h-5 w-5" />
+          </Button>
+          <Button variant="outline" size="lg">
+            <PlayCircle className="mr-2 h-5 w-5" /> Watch the Agent Act
           </Button>
         </motion.div>
 
@@ -52,8 +55,8 @@ export function Hero() {
             }}
           >
              <div className="text-center text-muted-foreground">
-                <p className="font-medium">[ Chat message → Database action UI animation ]</p>
-                <p className="text-sm mt-2">"I need 2 days" → "Due Date Updated + Notification Sent."</p>
+                <p className="font-medium">[ Chat Decision → Calendar Update UI animation ]</p>
+                <p className="text-sm mt-2">"Yes" → "Schedule updated. Stakeholders notified."</p>
              </div>
           </div>
         </motion.div>
