@@ -1,7 +1,6 @@
-import { Heading, Subheading } from "@/components/ui/heading";
+import { Heading } from "@/components/ui/heading";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Fingerprint, MessagesSquare, Bot } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
 
 const featureCategories = [
   {

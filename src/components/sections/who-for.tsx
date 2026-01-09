@@ -1,4 +1,4 @@
-import { Heading, Subheading } from "@/components/ui/heading";
+import { Heading } from "@/components/ui/heading";
 import { Code, UserCog } from "lucide-react";
 
 const audiences = [
