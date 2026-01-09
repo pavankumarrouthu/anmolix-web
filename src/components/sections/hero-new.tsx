@@ -1,7 +1,6 @@
 'use client';
 import { Button } from "@/components/ui/button";
-import { ArrowRight, PlayCircle } from "lucide-react";
-import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 export function Hero() {
@@ -20,10 +19,10 @@ export function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter text-foreground max-w-4xl mx-auto font-space-grotesk">
-            The Era of Agentic Co-ordination.
+            The Agentic Coordination System.
           </h1>
           <p className="max-w-3xl mx-auto mt-6 text-lg md:text-xl text-muted-foreground">
-            Move beyond static project management. Anmolix is the adaptive intelligence that orchestrates your team’s work, predicts delays, and negotiates time autonomously.
+            Moving enterprise work from static management to behavioral intelligence. Autonomous. Adaptive. Silent.
           </p>
         </motion.div>
 
@@ -35,9 +34,6 @@ export function Hero() {
         >
           <Button size="lg" className="bg-primary text-primary-foreground shadow-lg shadow-primary/20 hover:bg-primary/90">
             Request Early Access <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
-          <Button variant="outline" size="lg">
-            <PlayCircle className="mr-2 h-5 w-5" /> Watch the Agent Act
           </Button>
         </motion.div>
 
@@ -55,8 +51,8 @@ export function Hero() {
             }}
           >
              <div className="text-center text-muted-foreground">
-                <p className="font-medium">[ Chat Decision → Calendar Update UI animation ]</p>
-                <p className="text-sm mt-2">"Yes" → "Schedule updated. Stakeholders notified."</p>
+                <p className="font-medium">[ Agent auto-negotiated +24h on Calendar ]</p>
+                <p className="text-sm mt-2">A subtle, looping animation of a date changing.</p>
              </div>
           </div>
         </motion.div>
