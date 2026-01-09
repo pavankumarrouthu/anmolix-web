@@ -1,22 +1,22 @@
 import { Heading } from "@/components/ui/heading";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Fingerprint, MessagesSquare, Bot } from "lucide-react";
+import { Fingerprint, Link, Bot, HeartPulse } from "lucide-react";
 
 const featureCategories = [
   {
     icon: Fingerprint,
-    title: "Behavioral Intelligence",
-    description: "Anmolix learns the Velocity Fingerprint of every user—predicting bottlenecks based on individual work patterns, not just ticket counts.",
+    title: "Personalized Velocity",
+    description: "A system that doesn’t just track time—it learns rhythm. It knows how your team flows and protects them from the friction of bad planning.",
   },
   {
-    icon: MessagesSquare,
-    title: "Context-Linked Collaboration",
-    description: "Stop losing decisions in Slack. Every conversation in Anmolix is permanently anchored to a Task ID, turning unstructured chat into a structured Decision Log.",
+    icon: Link,
+    title: "Anchored Reality",
+    description: "Conversation and Execution are no longer separate. Every decision is permanently woven into the timeline.",
   },
   {
-    icon: Bot,
-    title: "Autonomous Execution",
-    description: "From routing approvals to auto-adjusting sprint timelines, Anmolix agents execute the 'Coordination Tax' tasks that burn out your managers.",
+    icon: HeartPulse,
+    title: "Autonomous Sync",
+    description: "No more status meetings. The system negotiates the gaps in the background, keeping your momentum unbroken.",
   },
 ];
 
@@ -25,7 +25,7 @@ export function Features() {
     <section id="architecture" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <Heading as="h2">The Intelligence Architecture</Heading>
+          <Heading as="h2">The Three Pillars</Heading>
         </div>
         
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">

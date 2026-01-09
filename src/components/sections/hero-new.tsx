@@ -20,10 +20,10 @@ export function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter text-foreground max-w-4xl mx-auto">
-            The First Agentic Co-ordination System.
+            Your Work, Orchestrated.
           </h1>
           <p className="max-w-3xl mx-auto mt-6 text-lg md:text-xl text-muted-foreground">
-            Anmolix is the autonomous layer that sits between your team and their workflows. We use Behavioral Intelligence to predict delays, negotiate schedules, and update workflows—so your managers don't have to.
+            Move beyond management. Enter the age of adaptive intelligence that aligns your team before you even ask.
           </p>
         </motion.div>
 
@@ -34,10 +34,7 @@ export function Hero() {
           className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <Button size="lg" className="bg-primary text-primary-foreground shadow-lg shadow-primary/20 hover:bg-primary/90">
-            Join the Private Beta <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
-          <Button size="lg" variant="outline" className="bg-transparent border-border hover:bg-secondary">
-            Read the Manifesto
+            Request Access <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </motion.div>
 
