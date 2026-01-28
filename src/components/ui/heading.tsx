@@ -12,7 +12,7 @@ export function Heading({
   return (
     <Comp
       className={cn(
-        "font-sans font-bold tracking-tighter text-foreground",
+        "font-sans font-bold tracking-tighter",
         Comp === "h1" && "text-4xl md:text-5xl lg:text-6xl",
         Comp === "h2" && "text-3xl md:text-4xl",
         Comp === "h3" && "text-2xl font-semibold",
