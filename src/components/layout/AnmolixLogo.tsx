@@ -8,7 +8,7 @@ export default function AnmolixLogo({ className }: { className?: string }) {
         className
       )}
     >
-      Anmolix
+      anmolix
     </div>
   );
 }
