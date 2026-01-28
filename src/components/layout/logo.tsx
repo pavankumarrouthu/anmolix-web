@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import AnmolixLogo from './AnmolixLogo';
 
-export function Logo({ width = 160, height = 40 }) {
+export function Logo({ width = 160, height = 22 }) {
     return (
-        <Link href="/" aria-label="anmolix Home" className="text-primary hover:text-primary/90 transition-colors">
+        <Link href="/" aria-label="anmolix Home">
            <AnmolixLogo
                 width={width}
                 height={height}
