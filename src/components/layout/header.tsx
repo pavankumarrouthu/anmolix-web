@@ -20,24 +20,27 @@ export function Header() {
   return (
     <header
       className={cn(
-        'sticky top-0 z-50 w-full transition-colors duration-300',
-        isScrolled ? 'bg-background/80 backdrop-blur-sm' : 'bg-transparent'
+        'sticky top-0 z-50 w-full transition-all duration-300',
+        isScrolled ? 'border-b border-border bg-background/80 backdrop-blur-sm' : 'bg-background'
       )}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
-        <Link href="/" aria-label="anmolix Home" className="text-primary hover:text-primary/90 transition-colors">
-           <AnmolixLogo width={160} height={40} />
+        <Link href="/" aria-label="anmolix Home">
+           <AnmolixLogo width={140} className="text-primary" />
         </Link>
-        <nav className="hidden md:flex items-center gap-6 text-sm">
-           {/* <Link href="#vision" className="text-muted-foreground hover:text-foreground transition-colors">
-            Vision
+        <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
+           <Link href="#how-it-works" className="text-muted-foreground hover:text-foreground transition-colors">
+            How It Works
           </Link>
-          <Link href="#manifesto" className="text-muted-foreground hover:text-foreground transition-colors">
-            Manifest
-          </Link> */}
+          <Link href="#capabilities" className="text-muted-foreground hover:text-foreground transition-colors">
+            Capabilities
+          </Link>
+           <Link href="#why-anmolix" className="text-muted-foreground hover:text-foreground transition-colors">
+            Use Cases
+          </Link>
         </nav>
         <div className="flex items-center gap-4">
-           <Button variant="default" size="sm" asChild>
+           <Button asChild>
             <Link href="#beta">Request Early Access</Link>
           </Button>
         </div>

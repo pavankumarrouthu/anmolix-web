@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <body className={cn("font-sans tracking-tight", inter.variable, spaceGrotesk.variable)}>
         {children}
         <Toaster />
