@@ -32,28 +32,29 @@ export function Roadmap() {
             <Heading as="h2">How Anmolix Works</Heading>
         </div>
         
-        <div className="relative max-w-2xl mx-auto">
-          {/* Vertical line */}
-          <div className="absolute left-1/2 top-0 h-full w-0.5 bg-border -translate-x-1/2"></div>
+        <div className="relative max-w-3xl mx-auto">
+          {/* Vertical line for desktop */}
+          <div className="absolute left-1/2 top-0 h-full w-0.5 bg-border -translate-x-1/2 hidden md:block"></div>
           
-          <div className="space-y-16">
+          <div className="space-y-12 md:space-y-16">
             {steps.map((step, index) => {
               const Icon = step.icon;
               const isLeft = index % 2 === 0;
               return (
-                <div key={index} className={`relative flex items-center ${isLeft ? 'justify-start' : 'justify-end'}`}>
-                  <div className={`w-1/2 ${isLeft ? 'pr-8 text-right' : 'pl-8 text-left'}`}>
-                     <div className="p-6 bg-card/50 rounded-2xl border border-border inline-block max-w-xs">
-                        <h3 className="font-sans font-bold text-lg">{step.title}</h3>
-                        <p className="text-muted-foreground mt-1 text-sm">{step.description}</p>
-                     </div>
-                  </div>
-                  
-                  {/* Dot on the timeline */}
-                  <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
+                <div key={index} className="relative md:grid md:grid-cols-2 md:items-center md:gap-x-8">
+                  {/* Dot on the timeline for desktop */}
+                  <div className="hidden md:flex absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-10 bg-background p-1 rounded-full">
                     <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 border-2 border-primary">
                        <Icon className="h-5 w-5 text-primary" />
                     </div>
+                  </div>
+
+                  {/* Card */}
+                  <div className={`md:col-start-${isLeft ? 1 : 2} md:row-start-1`}>
+                    <div className={`p-6 bg-card rounded-2xl border border-border max-w-sm ${isLeft ? 'md:ml-auto md:text-right' : 'md:mr-auto text-left'}`}>
+                        <h3 className="font-sans font-bold text-lg">{step.title}</h3>
+                        <p className="text-muted-foreground mt-1 text-sm">{step.description}</p>
+                     </div>
                   </div>
                 </div>
               );
