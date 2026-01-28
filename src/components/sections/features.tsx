@@ -39,7 +39,7 @@ export function Features() {
           {capabilities.map((capability) => {
             const Icon = capability.icon;
             return (
-              <Card key={capability.title} className="bg-primary-foreground/5 border-primary-foreground/10 p-6 flex flex-col text-left">
+              <Card key={capability.title} className="bg-primary-foreground/5 border-primary-foreground/10 p-6 flex flex-col text-left text-primary-foreground">
                 <div className="mb-4">
                   <Icon className="h-7 w-7 text-primary-foreground" />
                 </div>
