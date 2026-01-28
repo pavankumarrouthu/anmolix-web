@@ -21,10 +21,10 @@ export function Hero() {
           className="max-w-4xl mx-auto"
         >
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter text-foreground">
-            Execution that fixes itself when reality changes
+            Stop re-planning. Start executing.
           </h1>
           <p className="max-w-3xl mx-auto mt-6 text-lg md:text-xl text-muted-foreground">
-            Teams plan well, but dependencies break, priorities shift, and workflows slip. Anmolix automatically corrects schedules and preserves the context behind every decision.
+            When workflows slip or dependencies change, Anmolix automatically corrects execution and retains decision context — keeping teams aligned without constant intervention
           </p>
         </motion.div>
 
