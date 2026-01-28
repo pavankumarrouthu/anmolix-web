@@ -26,7 +26,7 @@ export function Header() {
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
         <Link href="/" aria-label="anmolix Home">
-           <AnmolixLogo width={120} height={28} />
+           <AnmolixLogo />
         </Link>
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
            <Link href="#problem" className="text-muted-foreground hover:text-foreground transition-colors">

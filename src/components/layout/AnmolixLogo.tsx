@@ -1,24 +1,14 @@
-import Image from 'next/image';
+import { cn } from "@/lib/utils";
 
-type Props = {
-  width?: number | string;
-  height?: number | string;
-  className?: string;
-};
-
-export default function AnmolixLogo({
-  width = 140,
-  height = 27,
-  className,
-}: Props) {
+export default function AnmolixLogo({ className }: { className?: string }) {
   return (
-    <Image
-      src="/anmolix-logo.png"
-      alt="Anmolix Logo"
-      width={Number(width)}
-      height={Number(height)}
-      className={className}
-      priority
-    />
+    <div
+      className={cn(
+        "font-sans text-2xl font-bold text-primary tracking-tighter",
+        className
+      )}
+    >
+      Anmolix
+    </div>
   );
 }

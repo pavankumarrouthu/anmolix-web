@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export function Hero() {
   return (
-    <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    <section className="relative w-full min-h-[calc(100vh-5rem)] flex items-center justify-center overflow-hidden pt-20 bg-background">
       {/* Background Gradient */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-background via-background/80 to-background" />
@@ -19,7 +19,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter text-foreground max-w-4xl mx-auto font-space-grotesk">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter text-foreground max-w-4xl mx-auto">
             Execution That Fixes Itself.
           </h1>
           <p className="max-w-3xl mx-auto mt-6 text-lg md:text-xl text-muted-foreground">
