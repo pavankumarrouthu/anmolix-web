@@ -22,7 +22,7 @@ const benefits = [
 
 export function WhyAnmolix() {
   return (
-    <section id="why-anmolix" className="py-16 md:py-24 bg-secondary/30">
+    <section id="solution" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <Heading as="h2">Handles Execution Friction, Automatically</Heading>

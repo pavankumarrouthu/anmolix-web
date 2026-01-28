@@ -26,22 +26,25 @@ export function Header() {
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
         <Link href="/" aria-label="anmolix Home">
-           <AnmolixLogo />
+           <AnmolixLogo width={120} height={28} />
         </Link>
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
-           <Link href="#how-it-works" className="text-muted-foreground hover:text-foreground transition-colors">
+           <Link href="#problem" className="text-muted-foreground hover:text-foreground transition-colors">
+            Problem
+          </Link>
+          <Link href="#solution" className="text-muted-foreground hover:text-foreground transition-colors">
+            Solution
+          </Link>
+          <Link href="#how-it-works" className="text-muted-foreground hover:text-foreground transition-colors">
             How It Works
           </Link>
-          <Link href="#capabilities" className="text-muted-foreground hover:text-foreground transition-colors">
-            Capabilities
-          </Link>
-           <Link href="#why-anmolix" className="text-muted-foreground hover:text-foreground transition-colors">
-            Use Cases
+           <Link href="#who-for" className="text-muted-foreground hover:text-foreground transition-colors">
+            Who It's For
           </Link>
         </nav>
         <div className="flex items-center gap-4">
            <Button asChild>
-            <Link href="#beta">Request Early Access</Link>
+            <Link href="#beta">Request Demo</Link>
           </Button>
         </div>
       </div>

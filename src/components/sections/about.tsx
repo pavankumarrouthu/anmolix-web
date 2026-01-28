@@ -1,26 +1,53 @@
-import { Heading, Subheading } from "@/components/ui/heading";
+import { Heading } from "@/components/ui/heading";
+import { Card } from "@/components/ui/card";
+import { RefreshCw, Users, AlertCircle } from "lucide-react";
+
+const problems = [
+  {
+    icon: RefreshCw,
+    title: "Constant Re-planning",
+    description: "When one task slips, leaders must manually realign dependencies across the entire workflow.",
+  },
+  {
+    icon: Users,
+    title: "Human Routing",
+    description: "Developers and managers become routers—chasing context, updating statuses, fixing schedules.",
+  },
+  {
+    icon: AlertCircle,
+    title: "Context Loss",
+    description: "The reasoning behind decisions disappears. Teams repeat discussions. Knowledge evaporates.",
+  },
+];
 
 export function About() {
   return (
-    <section id="about" className="py-16 md:py-24 bg-secondary/30">
+    <section id="problem" className="py-16 md:py-24 bg-secondary/30">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto">
-          <Subheading className="font-semibold text-primary">The Core Problem</Subheading>
-          <Heading as="h2" className="mt-4 mb-6">
-            Execution Breaks When Reality Changes
+        <div className="text-center max-w-4xl mx-auto">
+          <Heading as="h2" className="mb-4">
+            Execution breaks when reality changes
           </Heading>
-          <p className="text-lg text-muted-foreground">
-            Workflows slip. Dependencies break. Priorities shift. When plans meet reality, execution fails. This forces leaders and developers to become human routers—manually re-planning work, chasing context, and fixing schedules across the system.
+          <p className="text-lg text-muted-foreground mb-16">
+            Teams plan well. But priorities shift. Dependencies break. Timelines slip. The system doesn't adapt—people do. Manually.
           </p>
         </div>
 
-        <div className="text-center max-w-3xl mx-auto mt-16">
-          <Heading as="h3" className="mb-6 text-2xl">
-            Existing Tools Only Record What's Broken
-          </Heading>
-          <p className="text-lg text-muted-foreground">
-            Modern tools are great for tracking work, but they only record delays after they happen. They are passive databases, not active systems. They don't fix execution; they just create a backlog of what’s already broken, leaving your team to do the manual work of correction.
-          </p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          {problems.map((problem, index) => {
+            const Icon = problem.icon;
+            return (
+              <Card key={index} className="text-left bg-card p-6 shadow-sm border rounded-xl">
+                 <div className="flex items-center justify-start mb-4">
+                    <div className="p-2 bg-primary/10 rounded-md">
+                      <Icon className="h-6 w-6 text-primary" />
+                    </div>
+                  </div>
+                <h3 className="text-lg font-semibold mb-2 text-foreground">{problem.title}</h3>
+                <p className="text-muted-foreground text-sm">{problem.description}</p>
+              </Card>
+            );
+          })}
         </div>
       </div>
     </section>

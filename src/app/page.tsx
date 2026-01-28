@@ -15,9 +15,9 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <About />
+        <WhyAnmolix />
         <Roadmap />
         <Features />
-        <WhyAnmolix />
         <WhoFor />
         <Vision />
       </main>
