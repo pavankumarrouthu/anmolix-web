@@ -32,9 +32,6 @@ export function Header() {
            <Link href="#problem" className="text-muted-foreground hover:text-foreground transition-colors">
             Problem
           </Link>
-          <Link href="#solution" className="text-muted-foreground hover:text-foreground transition-colors">
-            Solution
-          </Link>
           <Link href="#how-it-works" className="text-muted-foreground hover:text-foreground transition-colors">
             How It Works
           </Link>
