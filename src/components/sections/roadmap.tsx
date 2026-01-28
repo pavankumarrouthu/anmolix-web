@@ -28,34 +28,64 @@ export function Roadmap() {
   return (
     <section id="how-it-works" className="py-16 md:py-24 bg-secondary/30">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 max-w-3xl mx-auto">
             <Heading as="h2">How Anmolix Works</Heading>
         </div>
         
-        <div className="relative max-w-3xl mx-auto">
+        <div className="relative max-w-4xl mx-auto">
           {/* Vertical line for desktop */}
-          <div className="absolute left-1/2 top-0 h-full w-0.5 bg-border -translate-x-1/2 hidden md:block"></div>
+          <div className="absolute left-1/2 top-0 h-full w-0.5 bg-border -translate-x-1/2 hidden md:block" aria-hidden="true"></div>
           
           <div className="space-y-12 md:space-y-16">
             {steps.map((step, index) => {
               const Icon = step.icon;
               const isLeft = index % 2 === 0;
               return (
-                <div key={index} className="relative md:grid md:grid-cols-2 md:items-center md:gap-x-8">
-                  {/* Dot on the timeline for desktop */}
-                  <div className="hidden md:flex absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-10 bg-background p-1 rounded-full">
-                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 border-2 border-primary">
-                       <Icon className="h-5 w-5 text-primary" />
-                    </div>
-                  </div>
+                <div key={index} className="relative">
+                    {/* Desktop View */}
+                    <div className="hidden md:grid md:grid-cols-[1fr_auto_1fr] md:gap-x-12 md:items-center">
+                        {isLeft ? (
+                            // Card on the left
+                            <div className="p-6 bg-card rounded-2xl border border-border text-right">
+                                <h3 className="font-sans font-bold text-lg">{step.title}</h3>
+                                <p className="text-muted-foreground mt-1 text-sm">{step.description}</p>
+                            </div>
+                        ) : (
+                            // Spacer
+                            <div></div>
+                        )}
+                        
+                        {/* Dot in the middle */}
+                        <div className="z-10 bg-background p-1 rounded-full">
+                            <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 border-2 border-primary">
+                                <Icon className="h-5 w-5 text-primary" />
+                            </div>
+                        </div>
 
-                  {/* Card */}
-                  <div className={`md:col-start-${isLeft ? 1 : 2} md:row-start-1`}>
-                    <div className={`p-6 bg-card rounded-2xl border border-border max-w-sm ${isLeft ? 'md:ml-auto md:text-right' : 'md:mr-auto text-left'}`}>
-                        <h3 className="font-sans font-bold text-lg">{step.title}</h3>
-                        <p className="text-muted-foreground mt-1 text-sm">{step.description}</p>
-                     </div>
-                  </div>
+                        {!isLeft ? (
+                            // Card on the right
+                            <div className="p-6 bg-card rounded-2xl border border-border text-left">
+                                <h3 className="font-sans font-bold text-lg">{step.title}</h3>
+                                <p className="text-muted-foreground mt-1 text-sm">{step.description}</p>
+                            </div>
+                        ) : (
+                            // Spacer
+                            <div></div>
+                        )}
+                    </div>
+                    
+                    {/* Mobile View */}
+                    <div className="md:hidden flex items-start gap-4">
+                        <div className="flex-shrink-0 z-10 bg-background p-1 rounded-full mt-1">
+                            <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 border-2 border-primary">
+                                <Icon className="h-5 w-5 text-primary" />
+                            </div>
+                        </div>
+                        <div className="p-6 bg-card rounded-2xl border border-border text-left">
+                            <h3 className="font-sans font-bold text-lg">{step.title}</h3>
+                            <p className="text-muted-foreground mt-1 text-sm">{step.description}</p>
+                        </div>
+                    </div>
                 </div>
               );
             })}
