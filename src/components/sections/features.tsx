@@ -1,53 +1,50 @@
 import { Heading } from "@/components/ui/heading";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Zap, Bot, History, Shield } from "lucide-react";
+import { Card } from "@/components/ui/card";
+import { Zap, Shield, Clock, TrendingDown } from "lucide-react";
 
 const capabilities = [
   {
-    icon: Bot,
-    title: "Agentic Execution",
-    description: "Anmolix is not a passive tool. It’s an active system with agents that reason and act on your behalf.",
-  },
-  {
     icon: Zap,
-    title: "Autonomous Correction",
-    description: "Instead of just flagging problems, Anmolix automatically fixes them, adjusting schedules and workflows silently.",
-  },
-  {
-    icon: History,
-    title: "Decision Memory",
-    description: "Context is never lost. The system creates a permanent, accessible memory of every execution decision.",
+    title: "Agentic Execution",
+    description: "Acts autonomously, not reactively. Decisions happen in real-time.",
   },
   {
     icon: Shield,
-    title: "Reduced Leadership Overhead",
-    description: "Frees up engineering leaders from the constant tax of manual re-planning and coordination.",
+    title: "Autonomous Correction",
+    description: "Fixes execution drift without waiting for humans to notice.",
+  },
+  {
+    icon: Clock,
+    title: "Decision Memory",
+    description: "Context is preserved. Teams never lose the 'why' behind changes.",
+  },
+  {
+    icon: TrendingDown,
+    title: "Reduced Overhead",
+    description: "Leaders spend less time routing and more time leading.",
   },
 ];
 
 export function Features() {
   return (
-    <section id="capabilities" className="py-16 md:py-24">
+    <section id="capabilities" className="py-16 md:py-24 bg-primary text-primary-foreground">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-            <Heading as="h2">A Fundamentally Different Approach</Heading>
+          <Heading as="h2">What makes Anmolix different</Heading>
+          <p className="text-lg text-primary-foreground/80 mt-4">
+            Not a dashboard. Not a reporting tool. A system that actively corrects execution.
+          </p>
         </div>
-        <div className="grid md:grid-cols-4 gap-8 max-w-7xl mx-auto">
-          {capabilities.map((capability, index) => {
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+          {capabilities.map((capability) => {
             const Icon = capability.icon;
             return (
-              <Card key={index} className="bg-transparent shadow-none border-none flex flex-col text-center items-center">
-                <CardHeader>
-                  <div className="flex flex-col items-center gap-4">
-                    <div className="p-3 bg-primary/10 rounded-lg">
-                      <Icon className="h-6 w-6 text-primary" />
-                    </div>
-                    <CardTitle className="font-sans text-xl">{capability.title}</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent className="flex-grow flex flex-col">
-                  <p className="text-muted-foreground">{capability.description}</p>
-                </CardContent>
+              <Card key={capability.title} className="bg-primary-foreground/5 border-primary-foreground/10 p-6 flex flex-col text-left">
+                <div className="mb-4">
+                  <Icon className="h-7 w-7 text-primary-foreground" />
+                </div>
+                <h3 className="font-bold text-lg mb-2">{capability.title}</h3>
+                <p className="text-sm text-primary-foreground/70">{capability.description}</p>
               </Card>
             );
           })}
