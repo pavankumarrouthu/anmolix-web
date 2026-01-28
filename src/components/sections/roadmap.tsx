@@ -13,12 +13,12 @@ const steps = [
       icon: BrainCircuit,
     },
     {
-      title: "3. Corrects Schedules Automatically",
+      title: "3. Corrects Schedules & Dependencies",
       description: "It autonomously re-aligns schedules and dependencies across the workflow, proposing an optimized path forward.",
       icon: Shuffle,
     },
     {
-      title: "4. Preserves Decision Memory",
+      title: "4. Preserves Decision Context",
       description: "Every correction is logged with its original context, creating a permanent, auditable record of why the plan changed.",
       icon: History,
     }

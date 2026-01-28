@@ -22,7 +22,7 @@ export function Hero() {
             Execution That Fixes Itself.
           </h1>
           <p className="max-w-3xl mx-auto mt-6 text-lg md:text-xl text-muted-foreground">
-            Anmolix automatically corrects schedules and dependencies when work slips. It’s not a reporting tool. It’s an active execution system.
+            Anmolix automatically corrects schedules and dependencies when work slips, and preserves the context behind every execution decision so nothing is lost.
           </p>
         </motion.div>
 
