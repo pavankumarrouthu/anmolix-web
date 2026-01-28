@@ -11,14 +11,17 @@ export function Footer() {
             <AnmolixLogo />
           </div>
           <nav className="flex items-center gap-6 text-sm">
-            <Link href="#vision" className="text-muted-foreground hover:text-foreground transition-colors">
-              Product
+            <Link href="#problem" className="text-muted-foreground hover:text-foreground transition-colors">
+              Problem
             </Link>
-            <Link href="#vision" className="text-muted-foreground hover:text-foreground transition-colors">
-              Manifesto
+            <Link href="#solution" className="text-muted-foreground hover:text-foreground transition-colors">
+              Solution
             </Link>
-            <Link href="#login" className="text-muted-foreground hover:text-foreground transition-colors">
-              Careers
+            <Link href="#how-it-works" className="text-muted-foreground hover:text-foreground transition-colors">
+              How It Works
+            </Link>
+            <Link href="#who-for" className="text-muted-foreground hover:text-foreground transition-colors">
+              Who It's For
             </Link>
           </nav>
           <div className="flex items-center gap-4">
