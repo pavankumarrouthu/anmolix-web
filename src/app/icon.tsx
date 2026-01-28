@@ -25,7 +25,7 @@ export default function Icon() {
           alignItems: 'center',
           justifyContent: 'center',
           borderRadius: '8px',
-          color: '#083F78', // primary color
+          color: '#0A3D62', // primary color
           fontFamily: 'Poppins, Inter, sans-serif',
           fontWeight: 700,
         }}

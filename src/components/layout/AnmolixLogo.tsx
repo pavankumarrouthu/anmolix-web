@@ -8,7 +8,7 @@ type Props = {
 
 export default function AnmolixLogo({
   width = 140,
-  height = 35,
+  height = 27,
   className,
 }: Props) {
   return (
