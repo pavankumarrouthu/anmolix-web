@@ -8,7 +8,7 @@ export function Footer() {
       <div className="container mx-auto px-4 py-10">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-4">
-            <AnmolixLogo width={120} height={30} />
+            <AnmolixLogo />
           </div>
           <nav className="flex items-center gap-6 text-sm">
             <Link href="#vision" className="text-muted-foreground hover:text-foreground transition-colors">
