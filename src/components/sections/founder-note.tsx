@@ -5,11 +5,8 @@ export function FounderNote() {
         <div className="text-center max-w-3xl mx-auto">
           <blockquote className="mt-6">
             <p className="text-2xl md:text-3xl font-medium text-foreground">
-              “The future of work isn't about managing tickets. It's about orchestrating agents.”
+              “The future of work isn't about managing tickets or managing team. It's about orchestrating agents.”
             </p>
-            <footer className="mt-8">
-              <p className="font-bold text-muted-foreground">Founder, Anmolix</p>
-            </footer>
           </blockquote>
         </div>
       </div>

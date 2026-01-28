@@ -1,21 +1,26 @@
-import { Heading, Subheading } from "@/components/ui/heading";
-import { MessageSquare, BrainCircuit, Database } from "lucide-react";
+import { Heading } from "@/components/ui/heading";
+import { ScanLine, BrainCircuit, Shuffle, History } from "lucide-react";
 
 const steps = [
     {
-      title: "1. Sense",
-      description: "The System detects intent and behavioral variance from signals like chat messages or Git commits.",
-      icon: MessageSquare,
+      title: "1. Detects Misalignment",
+      description: "Anmolix identifies when execution deviates from the plan, like a slipped dependency or a scope change.",
+      icon: ScanLine,
     },
     {
-      title: "2. Reason",
-      description: "Decision Intelligence calculates the downstream impact and proposes an optimal fix.",
+      title: "2. Reasons Over Time & Context",
+      description: "The system analyzes the impact on deadlines and resources, understanding the full context of the change.",
       icon: BrainCircuit,
     },
     {
-      title: "3. Act",
-      description: "The Agent updates the plan, shifts dependencies, and notifies stakeholders instantly.",
-      icon: Database,
+      title: "3. Corrects Schedules Automatically",
+      description: "It autonomously re-aligns schedules and dependencies across the workflow, proposing an optimized path forward.",
+      icon: Shuffle,
+    },
+    {
+      title: "4. Preserves Decision Memory",
+      description: "Every correction is logged with its original context, creating a permanent, auditable record of why the plan changed.",
+      icon: History,
     }
 ];
 
@@ -24,7 +29,7 @@ export function Roadmap() {
     <section id="how-it-works" className="py-16 md:py-24 bg-secondary/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-            <Heading as="h2">From Signal to Schedule in 3 Steps</Heading>
+            <Heading as="h2">How Anmolix Works</Heading>
         </div>
         
         <div className="relative max-w-2xl mx-auto">

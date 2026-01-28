@@ -3,14 +3,14 @@ import { Code, UserCog } from "lucide-react";
 
 const audiences = [
   {
-    icon: Code,
-    title: "For Developers: The Shield",
-    description: "Stop manual status updates. The Agent watches your Git commits and updates the board for you. It protects your focus time by negotiating realistic deadlines.",
+    icon: UserCog,
+    title: "Engineering & IT Leaders",
+    description: "For those who need to ensure execution integrity without spending their days re-planning sprints and chasing updates.",
   },
   {
-    icon: UserCog,
-    title: "For Managers: The Co-Pilot",
-    description: "Recover the 15 hours/week you lose to 'Coordination Tax.' Let the Agent handle rescheduling and follow-ups while you focus on strategy.",
+    icon: Code,
+    title: "Technical Founders & CTOs",
+    description: "For leaders scaling fast who need a system that maintains execution velocity as complexity grows.",
   },
 ];
 
@@ -19,7 +19,7 @@ export function WhoFor() {
     <section id="developers" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <Heading as="h2">Built for High-Velocity Engineering</Heading>
+          <Heading as="h2">Built for Teams That Build</Heading>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {audiences.map((audience, index) => {

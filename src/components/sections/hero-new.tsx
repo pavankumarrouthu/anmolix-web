@@ -19,10 +19,10 @@ export function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter text-foreground max-w-4xl mx-auto font-space-grotesk">
-            The Agentic Coordination System.
+            Execution That Fixes Itself.
           </h1>
           <p className="max-w-3xl mx-auto mt-6 text-lg md:text-xl text-muted-foreground">
-            Moving enterprise work from static management to behavioral intelligence. Autonomous. Adaptive. Silent.
+            Anmolix automatically corrects schedules and dependencies when work slips. It’s not a reporting tool. It’s an active execution system.
           </p>
         </motion.div>
 

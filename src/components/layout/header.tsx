@@ -29,16 +29,16 @@ export function Header() {
            <AnmolixLogo width={160} height={40} />
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm">
-           <Link href="#vision" className="text-muted-foreground hover:text-foreground transition-colors">
+           {/* <Link href="#vision" className="text-muted-foreground hover:text-foreground transition-colors">
             Vision
           </Link>
           <Link href="#manifesto" className="text-muted-foreground hover:text-foreground transition-colors">
             Manifest
-          </Link>
+          </Link> */}
         </nav>
         <div className="flex items-center gap-4">
-           <Button variant="outline" size="sm" asChild>
-            <Link href="#beta">Request Access</Link>
+           <Button variant="default" size="sm" asChild>
+            <Link href="#beta">Request Early Access</Link>
           </Button>
         </div>
       </div>

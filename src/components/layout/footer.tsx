@@ -12,13 +12,13 @@ export function Footer() {
           </div>
           <nav className="flex items-center gap-6 text-sm">
             <Link href="#vision" className="text-muted-foreground hover:text-foreground transition-colors">
-              Manifesto
+              Product
             </Link>
             <Link href="#vision" className="text-muted-foreground hover:text-foreground transition-colors">
-              Vision
+              Manifesto
             </Link>
             <Link href="#login" className="text-muted-foreground hover:text-foreground transition-colors">
-              Login
+              Careers
             </Link>
           </nav>
           <div className="flex items-center gap-4">
@@ -31,7 +31,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-6 text-center text-xs text-muted-foreground/50">
-          © {new Date().getFullYear()} Anmolix Inc.
+          © {new Date().getFullYear()} Anmolix Inc. The Agentic Workspace.
         </div>
       </div>
     </footer>

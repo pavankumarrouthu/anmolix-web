@@ -1,31 +1,31 @@
 import { Heading } from "@/components/ui/heading";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { GitCommit, Bot, MessageSquare, ListTree } from "lucide-react";
+import { Hourglass, Unlink, Target } from "lucide-react";
 
 const benefits = [
   {
-    icon: ListTree,
-    title: "Beyond Static Lists",
-    description: "Traditional tools are passive databases. Anmolix is an active system that models behavioral variance, not just static math."
+    icon: Hourglass,
+    title: "When a Workflow Slips",
+    description: "A task takes longer than planned. Anmolix detects the variance, calculates the downstream impact, and adjusts dependent tasks and deadlines."
   },
   {
-    icon: Bot,
-    title: "Active Agents, Not Passive UI",
-    description: "Instead of waiting for clicks, our agents proactively update schedules, notify stakeholders, and manage dependencies."
+    icon: Unlink,
+    title: "When a Dependency Breaks",
+    description: "A critical component is delayed. Anmolix finds a new optimal path, re-routes dependent workflows, and notifies the relevant owners."
   },
   {
-    icon: MessageSquare,
-    title: "Anchored Decisions, Not Floating Chat",
-    description: "Context isn't lost in a separate tool. Decisions are anchored directly to tasks, creating a permanent audit trail."
+    icon: Target,
+    title: "When a Priority Shifts",
+    description: "Leadership changes a key priority. Anmolix re-calculates resource allocation and proposes a new execution schedule based on the new goal."
   },
 ];
 
 export function WhyAnmolix() {
   return (
-    <section id="why-anmolix" className="py-16 md:py-24">
+    <section id="why-anmolix" className="py-16 md:py-24 bg-secondary/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <Heading as="h2">Beyond Static Management</Heading>
+          <Heading as="h2">Handles Execution Friction, Automatically</Heading>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {benefits.map((benefit, index) => {
@@ -45,7 +45,6 @@ export function WhyAnmolix() {
             )
           })}
         </div>
-        <p className="text-center mt-12 text-muted-foreground italic">Anmolix isn't another project management tool. It's a new category.</p>
       </div>
     </section>
   );
