@@ -1,6 +1,6 @@
 import Link from "next/link";
 import AnmolixLogo from "./AnmolixLogo";
-import { Linkedin, Twitter } from "lucide-react";
+import { Linkedin, Mail } from "lucide-react";
 
 export function Footer() {
   return (
@@ -22,11 +22,11 @@ export function Footer() {
             </Link>
           </nav>
           <div className="flex items-center gap-4">
-            <Link href="#" aria-label="LinkedIn">
+            <Link href="https://www.linkedin.com/company/anmolix/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
               <Linkedin className="h-5 w-5 text-muted-foreground hover:text-foreground transition-colors" />
             </Link>
-            <Link href="#" aria-label="Twitter">
-              <Twitter className="h-5 w-5 text-muted-foreground hover:text-foreground transition-colors" />
+            <Link href="mailto:info@anmolix.com" aria-label="Mail">
+              <Mail className="h-5 w-5 text-muted-foreground hover:text-foreground transition-colors" />
             </Link>
           </div>
         </div>
